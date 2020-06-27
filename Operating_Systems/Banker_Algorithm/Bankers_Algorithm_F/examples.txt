@@ -1,0 +1,18 @@
+
+process&type_of_resources&available_instances&max_instances_for_request&assigned_instances
+3&3&5,3,2&7,5,3-9,0,4-2,2,2&0,1,0-4,0,1-2,1,1
+
+
+https://www.cs.jhu.edu/~yairamir/cs418/os4/sld025.htm
+5&3&3,3,2&7,5,3-3,2,2-9,0,2-2,2,2-4,3,3&0,1,0-1,0,0-3,0,2-2,1,1-0,0,2
+
+	--> P1, P3, P0, P2, P4
+
+Diapositivas Daniel
+	--> P1, P3, P4, P0, P2
+	
+
+
+
+
+
