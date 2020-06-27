@@ -1,0 +1,5 @@
+http://www.codebytes.in/2014/08/minimax-algorithm-tic-tac-toe-ai-in.html
+
+http://theoryofprogramming.com/2017/12/12/minimax-algorithm/
+
+https://github.com/VamsiSangam/theoryofprogramming/blob/master/Artificial%20Intelligence/MiniMax%20Algorithm/Java/MiniMaxAlgorithm.java
