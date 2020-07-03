@@ -1,0 +1,87 @@
+Video de ejemplos de interfaces físias:
+	https://www.youtube.com/watch?v=T4n7gKvC2Jg
+
+
+-Bolita en un hueco dentro de un laberinto. La persona debe mover el laberinto usando su peso, presión, sobre el suelo (con sensores de presión) que detecta y mueve al laberinto.
+	
+	-https://www.xataka.com/makers/46-proyectos-makers-para-hacer-verano-arduino-raspberry-pi
+
+		-Ajedrez físico con wireless o comandos de voz. Competir con el juego online y dejar lo virtual para jugar con lo físico.
+
+		-Acercarse a un huerto y en cada lugar nos indica una voz cuál es el estado de la planta (humedad, ph, calidad del aire, luz, etc.). 
+			Una persona se acerca y recibe toda esta información a través de voz o de pantalla.
+			Avisa de amenazas, monitorea, riega. (Jardín automatizado:  25).
+
+		-Usar una pantalla que muestre imagenes (o cualquier otra cosa: un avatar, surf, patinaje, montaña rusa, etc) según los movimientos de un usario. + Silla.
+
+		-Barman que "pregunta" que desea un usuario al acercarse y le responde con el pedido ("En caso que haya como") (30).
+			https://www.xataka.com/makers/46-proyectos-makers-para-hacer-verano-arduino-raspberry-pi
+		
+		-Selector de colores. Organizar cosas por color (pinturas, dulces, ropa, etc). (13).
+
+		-RADAR para detectar objetos  (5). Para gente ciega. Para un objeto que detecte que algo se acerque, etc.
+
+		-Un tomador de fotos automático.
+			https://www.youtube.com/watch?v=hEBjbSTLytk 
+
+	***Ver ARDUINO + ALEXA(asistente de amazon)
+		Puede servir para controlar ciertas cosas de ambientes pequeños (cortinas, puertas, luces, etc.). 
+		Perisanas (15)
+		https://create.arduino.cc/projecthub/projects/tags/alexa
+
+	
+	***Ver HOW TO MECHATRONICS.com
+
+
+Para planta
+	https://www.ecured.cu/Jardiner%C3%ADa_sustentable
+	*sensor de humedad
+	*sensor de temperatura
+	*relé
+	*bluethoot
+	*LEDs
+	*LCD
+	*sensor de presión/prfundidad (para balde).
+	
+	sensor de luz
+	
+	bomba de agua
+	regulador de agua
+
+	Módulo bme280	https://lastminuteengineers.com/bme280-arduino-tutorial/
+	Módulo Dh11 	https://programarfacil.com/blog/arduino-blog/sensor-dht11-temperatura-humedad-arduino/
+		
+	
+
+PHYSICAL COMPUTING 
+	ITPs
+Video: Breaking wave, kinetil scuplture located in the Biogen Idec lobby.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

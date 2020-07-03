@@ -1,0 +1,27 @@
+CMP0220: Proyecto de Estructura de Datos
+Fecha de Entrega: Martes, 4 de Diciembre - 10 am.
+Descuento 5% de nota por cada hora de retraso, contabilizada desde la hora de entrega.
+Proyecto en parejas o individual.
+Presentaciones: 10-15 min.
+Inicio de Presentaciones: 4 de Diciembre / se sortea el orden. No realizar el demo implica 50% descuento en la nota final del proyecto.
+Escribir un programa en JAVA , que lee un archivo de texto y crea un indice invertido de las palabras del mismo, debe indicar en que linea y posición se encuentra cada palabra.
+1) Leer un archivo de texto con información genérica,
+2) Leer un archivo de palabras de excepción, separadas por comas y/o salto de lineas (10%). Ejm: el, la, un, unos, ....
+3) (50%) Crear, en alguna estructura de datos , un indice invertido sobre cada palabra sin tomar en cuanta las palabras de excepción
+Ejm:
+casa (2,45) ( 10, 34)...
+sol (5,10) (24,78) (45, 23)...
+4) (10%) Imprimir el indice invertido en un archivo de texto, ordenado en orden alfabético, una palabra por linea.
+Ejm:
+casa (2,45) ( 10, 34)...
+sol (5,10) (24,78) (45, 23)...
+.....
+...
+5) (10%) Preguntar que palabra quiere buscar e imprimir en pantalla su información. Ejm:
+>> pelicano
+>> pelicano (3,45) ( 45,98)....
+6) (10%) Preguntar grupos de palabras , y reportar las lineas en las cuales se encuentran todas las palabras. Ejm:
+>>perro mueble sol >> lineas: 34, 56,
+7) (10%) Interface Gráfica
+Los proyectos que se sospechen son copiados o mandados ha hacer.
+TIENEN F EN EL CURSO Y DEMANDA DE PLAGIO.

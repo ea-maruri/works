@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inverted_index_maruri_mena.FXMLDocumentController">
+   <children>
+      <BorderPane layoutY="-14.0" prefHeight="686.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="582.0" prefWidth="558.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="552.0" spacing="50.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="178.0" text="Ruta de Archivo de excepciones: " />
+                        <TextField fx:id="txt_RouteExceptions" prefHeight="25.0" prefWidth="306.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="552.0" spacing="45.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="185.0" text="Ruta de Archivo de texto: " />
+                        <TextField fx:id="txt_RouteFile" prefHeight="25.0" prefWidth="307.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="49.0" prefWidth="552.0" spacing="100.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#GenerateIndex" text="Generar Indice Invertido" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="63.0" prefWidth="552.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="49.0" prefWidth="552.0" spacing="15.0">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Búsqueda">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="552.0" spacing="50.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="113.0" text="Por palabra: " />
+                        <TextField fx:id="txt_WordToSearch" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#SearchWord" prefHeight="25.0" prefWidth="74.0" text="Buscar" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="552.0" spacing="34.0">
+                     <children>
+                        <Label text="Palabra encontrada:" />
+                        <TextField fx:id="txt_FoundedWord" prefHeight="25.0" prefWidth="392.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="314.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="258.0" text="Por grupo de palabras (separadas por comas):" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="552.0">
+                     <children>
+                        <TextField fx:id="txt_GroupToSearch" prefHeight="25.0" prefWidth="553.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="552.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#SearchGroup" text="Buscar" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="99.0" prefWidth="552.0">
+                     <children>
+                        <TextArea fx:id="txt_FoundedGroup" prefHeight="0.0" prefWidth="552.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="552.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="27.0" prefWidth="552.0" spacing="10.0">
+                           <children>
+                              <Separator prefHeight="3.0" prefWidth="474.0" />
+                              <Label alignment="CENTER" text="Excepciones">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="552.0" spacing="30.0">
+                     <children>
+                        <Label text="Ingresa nueva excepcion:" />
+                        <TextField fx:id="txt_AddException" />
+                        <Button mnemonicParsing="false" onAction="#AddException" text="Ingresar" />
+                        <Label fx:id="lbl_AddException" text="Label" textFill="RED" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="lbl_PushedButton" text="Label_ButtonPushed" />
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </left>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <top>
+            <Label prefHeight="56.0" prefWidth="238.0" text="GENERADOR DE ÍNDICE INVERTIDO" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
