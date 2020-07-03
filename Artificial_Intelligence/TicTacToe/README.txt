@@ -1,6 +1,6 @@
 TicTacToeProj													|
 														|
-	Elaborated by Alejandro Maruri 	136515									|
+	Elaborated by Alejandro Maruri										|
 	Project made in Apache NetBeans IDE 11.1								|
 														|
 ________________________________________________________________________________________________________________

@@ -1,6 +1,5 @@
-Project made by por Alejandro Maruri
+Project made in JAVA by Alejandro Maruri
 
-Made in JAVA
 
 README OF THE PROJECT AStar for 8Puzzle. READ CAREFULLY.  
 

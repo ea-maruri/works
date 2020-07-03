@@ -1,6 +1,6 @@
 # artificial intelligence
 
-Category for many different works and practice in IA
+Category that contains works and practices in IA.
 
 
 By Alejandro Maruri
