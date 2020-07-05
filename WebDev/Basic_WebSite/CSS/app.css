@@ -1,0 +1,92 @@
+div.center-block, div.gallery-card, div.card-deck {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+body {
+  background-color: #F6F4F0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25; }
+
+div.color-white {
+  color: #F6F4F0; }
+
+.footsy {
+  background-color: #222; }
+
+.footer-social-media {
+  text-align: center; }
+
+ul.list-unstyled li a, a i.fa {
+  color: #F6F4F0; }
+
+hr.hr-footer {
+  height: 1px;
+  border-top: 1px solid #F6F4F0; }
+
+i.social-icon {
+  transition: transform 0.2s; }
+  i.social-icon:hover {
+    transform: scale(1.5); }
+
+.jumbotron {
+  margin-top: 2rem; }
+
+img.logo-sm {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+img.carousel-img {
+  max-height: 300px;
+  width: auto;
+  display: block;
+  margin: auto;
+  transition: transform 0.2s; }
+  img.carousel-img:hover {
+    transform: scale(1.2); }
+
+img.pro-image {
+  -webkit-box-shadow: 0 0 15px #ccc;
+  -moz-box-shadow: 0 0 15px #ccc;
+  box-shadow: 0 0 15px #ccc;
+  border: 1px solid black;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  transition: transform 0.2s; }
+  img.pro-image:hover {
+    transform: scale(1.2); }
+
+a.carousel-control-prev, a.carousel-control-next {
+  background-color: black; }
+
+.navbar {
+  font-family: "Source Serif Pro", serif; }
+  .navbar .navbar-collapse {
+    text-transform: uppercase; }
+
+div.dropdown-menu {
+  background-color: #222; }
+
+div.gallery-card {
+  -webkit-box-shadow: 0 0 20px #ccc;
+  -moz-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px; }
+
+button.nav-button {
+  background-color: #ccc;
+  color: #222;
+  font-weight: 600; }
+
+button.btn-contact {
+  background-color: #080073; }
+
+/*# sourceMappingURL=app.css.map */

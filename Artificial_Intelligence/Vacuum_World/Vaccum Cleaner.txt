@@ -1,38 +1,0 @@
-Vacuum Cleaner Alejandro Maruri , Joel Maldonado 
-
-En el presente proyecto se busca generar un mapa en base a la experiencia obtenida por el Vaccum clearner, 	se utiliza un modelo deterministico el cual hace girar siempre a la izquierda, en primera instancia 	y a la derecha como segunda opción, según el estado actual en el mapa del Vacuum. 	Se utiliza el los 2 sensores que tiene el VacuumCleaner: ver al frente y gire antes de colisionar y ver debajo suyo la suciedad. 	En base al mapa que es generado paulatinamente por el agente, se evita  volver a posiciones previamente visitadas.	Se intenta minimizar el número de movimientos hacia al frente antes que el número de giros debido a los pesos que estos tienen en la función costo, 		para esto se utiliza el mapa anteriormente mencionado.
-
-Modelo de datos:
-Se utiliza un HasMap de Maps, El hashmap tiene una key que simula el eje x y el map tiene una key que simula el eje y, y como elemento del map tiene un nodo.
-	Eg
-		Hashmap<x,Mapa<y,<nodo>>
-
-Nodo: los nodos simulan un posición del sistema o mapa, cada vez que este avanza se genera un nuevo nodo, esta clase contiene:
-	-Los puntos Y y X del sistema, (Obviamente se toma como origen el 0,0).
-	-La característica de un nodo(si esta libre, si fue visitado , si es una pared )
-	-Contiene un priority queue donde almacena las ultimas 4 posiciones, para ver si esta atorado.
-	-La dirección hacia donde apunta el VacuumCleaner
-	-Cuando este esta atorado (esta rodeado por 3 paredes y la salida esta visitada)
-	-Contiene los nodos de su entorno(norte, sur , este , oeste).los nodos de los cuales se toma información se los toma como null.
-	-Metodos set y get para sus variables al igual que a su nodo 	*Nodo es una clase privada dentro de AgentMap.
-Clases:
-	Se creo una clase Agent Map y se modifico la clase VacAgent
-
-	-AgentMap: Esta clase se encarga de generar el mapa en base a la experiencia del agente, cuenta con una clase interna (Nodo)		la cual contiene las características anteriormente mencionadas.
-		En esta clase se toma en cuenta dos casos particulares: Cuando el agente se queda atorado en un obstáculo y 			cuando ha barrido la mayoría de cuadrillas disponibles y se queda encerrado por que no tiene nodos libres a donde avanzar.
-
-		Estados particulares:
-			Atorado: el agente se encuentra rodeado de 3 paredes y no puede regresar ya que su salida es un nodo visitado. 				Para esto se incorporo una función que determine cuando esta rodeado de 3 paredes y que cambia el estado de la salida 				de visitado a libre.
-
-		No hay nodos libres cercanos:en este caso se considera que el estado donde el agente haya barrido todos o la mayoría de las cuadrillas 			y como no hay nodos cercanos el agente va a comenzar a girar sin parar, por lo que  después de 8 giros el VacuumCleaner se apaga.
-
-
-	-VacAgent: En esta clase se modifico y se cree nuevo metodos ,entre los mas importantes tenemos
-		Metodos:
-			-DetermineAction: en base al estado de un nodo se determina la acción a realizar
-				Debido a que el agente siempre gira hacia la izquierda, una vez 
-			-nearFree: Busca el nodo cercano con menor costo que no este visitado.
-
- 
-
-

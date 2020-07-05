@@ -4,7 +4,7 @@
  * 24/08/2018
  */
 
-public class Deber_1_DoublyLinkedList {
+public class Main {
 
     public static void main(String[] args) {
         DoublyLinkedList<cStudent> studList = new DoublyLinkedList<>();

@@ -6,13 +6,10 @@ import java.io.FileReader;
  *
  * @author EAMT
  */
-public class File {
+public class cFile {
 
-    public File(){}
+    public cFile(){}
 
-    public File(String path){
-        java.io.File = new FileReader()
-    }
 
 
     public String readFile(String path){
