@@ -6,6 +6,8 @@ var db = mongoose.connect("mongodb://localhost/shop"); // Create database
 
 var Product = require("./model/product");
 var WishList = require("./model/wishlist");
+const { request } = require("http");
+const { response } = require("express");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -25,6 +27,20 @@ app.post("/product", function(request, response){
         }
         else {
             response.status(200).send(savedProduct);
+        }
+    })
+});
+
+
+// Create get request. It is Asynchronous. Processes are separate from main process in threads
+app.get("/product", function(request, response){
+   
+    Product.find({}, function(err, products){
+        if(err){
+            response.status(500).send({error: "Could not fecth the products"});
+        }
+        else {
+            response.send(products);
         }
     })
 })
