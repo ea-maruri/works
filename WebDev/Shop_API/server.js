@@ -8,6 +8,7 @@ var Product = require("./model/product");
 var WishList = require("./model/wishlist");
 const { request } = require("http");
 const { response } = require("express");
+const { model } = require("./model/product");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -23,7 +24,7 @@ app.post("/product", function(request, response){
 
     product.save(function(err, savedProduct){
         if(err){
-            response.status(500).send({error: "Coul not save the product"})
+            response.status(500).send({error: "Coul not save the product"});
         }
         else {
             response.status(200).send(savedProduct);
@@ -37,7 +38,7 @@ app.get("/product", function(request, response){
    
     Product.find({}, function(err, products){
         if(err){
-            response.status(500).send({error: "Could not fecth the products"});
+            response.status(500).send({error: "Could not fetch the products"});
         }
         else {
             response.send(products);
@@ -46,6 +47,57 @@ app.get("/product", function(request, response){
 })
 
 
+// Create post request wishlist
+app.post("/wishlist", function(request, response){
+    var wishlist = new WishList();
+    wishlist.title = request.body.title;
+
+    wishlist.save(function(err, savedWishlist){
+        if(err){
+            response.status(500).send({error: "Could not create wishlist"});
+        }
+        else{
+            response.send(wishlist);
+        }
+    })
+})
+
+
+// Create get request wishlist
+app.get("/wishlist", function(request, response){
+    WishList.find({}).populate({path:'products', model: "Product"}).exec(function(err, wishlists){
+        if(err){
+            response.status(500).send({error: "Could not fetch wishlists"});
+        }
+        else{
+            response.status(200).send(wishlists);
+        }
+    })
+})
+
+
+// Update items on wishlist
+app.put("/wishlist/product/add", function(request, response){
+    Product.findOne({_id: request.body.productId}, function(err, product){
+        if(err){
+            response.status(500).send({error: "Could not put the new product to wishlist"});
+        }
+        else {
+            WishList.update({_id: request.body.wishlistId}, 
+                {$addToSet: {
+                    products: product._id}},
+                    function(err, wishlist){
+                        if(err){
+                            response.status(500).send({error: "Could not put the new product to wishlist"});
+                        }
+                        else {
+                            //response.send("Suppose Successfully")
+                            response.send(wishlist);
+                        }
+                })
+        }
+    })
+})
 
 // Run API
 app.listen(3000, function(){
