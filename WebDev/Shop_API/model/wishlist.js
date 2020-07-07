@@ -6,7 +6,7 @@ var wishlist = new Schema({
     title: {type: String, default: "My Cool WishList", required: true},
     // Referenc of Product in "product.js". Having a relation between Products and the list.
     // An array of Products.
-    product: [{type: ObjectId, ref: "Product"}]
+    products: [{type: ObjectId, ref: "Product"}]
 })
 
 
