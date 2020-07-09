@@ -100,6 +100,6 @@ app.put("/wishlist/product/add", function(request, response){
 })
 
 // Run API
-app.listen(3000, function(){
-    console.log("Shop API running on port 3000..."); 
+app.listen(3004, function(){
+    console.log("Shop API running on port 3004..."); 
 })
