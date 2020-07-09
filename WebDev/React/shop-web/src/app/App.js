@@ -1,34 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HttpService from '../services/htttp-service';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Product from "../product/product";
 
+import HttpService from "../services/htttp-service";
 
 const http = new HttpService();
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+
+    this.state = { products: [] };
 
     console.log("Suppose I make an http request");
 
     // We need to bind functions
-    this.loadData = this.loadData.bind(this);
-    this.loadData();
+    this.productList = this.productList.bind(this);
+    //this.loadData = this.loadData.bind(this);
+    //this.loadData();
     //http.getProducts();
   }
 
 
   loadData = () => {
-    http.getProducts().then(products => {
-      console.log(products);
-    }, err => {
-      console.log("Something went wrong!");
-    });
+    http.getProducts().then(data => {
+        this.setState({products: data});
+      },
+      (err) => {
+        //console.log("Something went wrong!");
+      }
+    );
+  };
+
+
+  productList = () => {
+    const list = this.state.products.map((product) => 
+      <div className="col-sm-12 col-md-4" key={product._id}>
+        <Product
+          title={product.title}
+          price={product.price}
+          imgUrl={product.imgUrl}
+        />
+      </div>
+    );
+
+    return (list);
   }
 
 
-  render(){
+  render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -46,6 +67,14 @@ class App extends React.Component {
             Learn React
           </a>
         </header>
+
+        <div className="container App-main">
+          <div className="row">
+            <div className="col flex-row">
+              {this.productList()}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
