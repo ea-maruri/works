@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './app/App';
+
+
+// Components
+import App from './app/App'; // It is not used
+import TopBar from './top-bar/top-bar';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TopBar />
   </React.StrictMode>,
   document.getElementById('root')
 );
