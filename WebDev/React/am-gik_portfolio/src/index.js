@@ -5,6 +5,7 @@ import "./index.css";
 // Components
 import App from "./app/App";
 import PseudoNav from "./components/pseudo-nav/pseudo-nav";
+import Footer from "./components/footer/footer";
 
 // Images
 import Me from "./Me.jpg";
@@ -49,17 +50,17 @@ ReactDOM.render(
               Hey there! I'm Alejandro. 
               <br></br> <br></br> 
 
-              I am a <strong>university student</strong> of the the <em>Systems Engineering</em> degree, 
-              at the 
+              I am a <strong>university student</strong> of <em>Systems Engineering</em> degree, 
+              at the{" "}
               <strong><em title="Universidad San Francisco de Quito"><a href="http://www.usfq.edu.ec/Paginas/Inicio.aspx">USFQ</a></em></strong>.
               <br></br> <br></br>
 
               As an organized, effective, responsible, and highly motivated to
-              learn person, I am able to <strong>adapt</strong> to
-              circumstances, work as a <strong>team</strong>
-              and be <strong>autodidact</strong>. <br></br> <br></br>I offer
-              different kind of works in <strong>developmente area</strong>. So,
-              let's check my{" "}
+              learn person, I am able to <strong>adapt</strong> to circumstances, work as a{" "}
+              <strong>team</strong> and be <strong>autodidact</strong>. 
+              <br></br> <br></br>
+              
+              I offer different kind of works in <strong>developmente area</strong>. So, let's check my{" "}
               <strong>
                 <em>
                   <a title="Portfolio" href="./pages/portfolio/portfolio.html">
@@ -87,6 +88,8 @@ ReactDOM.render(
         </div>
       </div>
     </main>
+  
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );

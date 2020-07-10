@@ -16,6 +16,7 @@ class SocialMedia extends React.Component {
           <ChipButton
             id="social-chip"
             value="Get in touch"
+            class="button-chip-sm"
             dataToggle=""
             dataTarget=""
           />

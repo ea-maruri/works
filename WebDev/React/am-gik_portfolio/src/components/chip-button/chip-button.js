@@ -9,7 +9,7 @@ class ChipButton extends React.Component {
         type="button"
         title="Click me!"
         id={this.props.id}
-        className="button-chip search-circle"
+        className={this.props.class + " d-flex justify-content-center align-items-center"}
         data-toggle={this.props.dataToggle}
         data-target={this.props.dataTarget}
       >

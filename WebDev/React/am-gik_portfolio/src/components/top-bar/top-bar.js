@@ -28,6 +28,7 @@ class TopBar extends React.Component {
                   <ChipButton
                     id="search-chip"
                     value="Search"
+                    class="button-chip-sm"
                     dataToggle="modal"
                     dataTarget="#searchModal"
                   />
