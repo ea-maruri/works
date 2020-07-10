@@ -11,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <App />
     <TopBar />
   </React.StrictMode>,
   document.getElementById('root')

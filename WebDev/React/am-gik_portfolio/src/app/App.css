@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+nav .nav-cards {
+  position: fixed;
+  bottom: -210px;
+  width: 100%;
+  z-index: 9999;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 770px) {
+  nav .nav-cards {
+    bottom: -190px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav .nav-cards .card1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+nav .nav-cards .card1 .nav-card {
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .nav-cards .card1 .nav-card:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  margin-top: -3rem;
 }
+
+nav .nav-cards .card2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  position: relative;
+  right: 10px;
+}
+
+nav .nav-cards .card2 .nav-card {
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+
+nav .nav-cards .card2 .nav-card:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  margin-top: -3rem;
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,38 @@
+/*** Button - Circle ***/
+@import "./../sass/variables"
+@import "./../sass/mixins"
+
+
+.search-circle
+    position: relative
+    right: $margin-content
+    //top: -6.5vh
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    width: $chip-size
+    height: $chip-size
+
+    border: 3px dashed $brand-white
+    background-color: $brand-red
+    
+    cursor: pointer
+    color: $brand-white
+    font-size: 0.7rem
+             
+    +mBorderR(50%)
+    +mShadow( 0px 0px 9px 7px rgba(0,0,0,.8)) // Box Shadow
+    +zoomUp(.5s, 1.1)
+    
+
+    @media #{"only screen and (max-width : 770px)"}
+        right: 1rem
+
+    @media #{"only screen and (max-width : 650px)"} 
+        width: $chip-size-sm
+        height: $chip-size-sm
+
+        //display: none
+            

@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+// Components
+import NavCard from './../nav-card/nav-card';
+
+import diamond from "./diamond-17.svg";
+import spades from "./symbols-spades-light.svg";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <nav>
+
+      <div className="container">
+        Hello
+      </div>
+
+      <div id="mprincipal-nav" className="nav-cards">
+
+        <div className="card1">
+          <NavCard imgUrl={spades} imgAlt="Spades" title="Portfolio"/>
+        </div>
+
+        <div className="card2">
+          <NavCard imgUrl={diamond} imgAlt="Diamond" title="About"/>
+        </div>
+
+      </div>
+
+    </nav>
   );
 }
 

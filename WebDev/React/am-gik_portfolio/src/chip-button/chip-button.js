@@ -2,6 +2,7 @@ import React from "react";
 import "./chip-button.css";
 
 class ChipButton extends React.Component {
+  
   render() {
     return (
       <button
@@ -12,7 +13,7 @@ class ChipButton extends React.Component {
         data-toggle="modal"
         data-target="#searchModal"
       >
-        Search
+        {this.props.value}
       </button>
     );
   }

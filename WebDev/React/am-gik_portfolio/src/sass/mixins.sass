@@ -1,0 +1,55 @@
+=mShadow($shadow)
+    -ms-box-shadow:         $shadow
+    -webkit-box-shadow:     $shadow
+    -moz-box-shadow:        $shadow
+    -o-box-shadow:          $shadow
+    box-shadow:             $shadow
+
+
+=mBorderR($b-radius)
+    -ms-border-radius:      $b-radius
+    -webkit-border-radius:  $b-radius
+    -moz-border-radius:     $b-radius
+    -o-border-radius:       $b-radius
+    border-radius:          $b-radius
+
+
+=mRotate($rotation)
+    -ms-transform:          rotate($rotation)
+    -webkit-transform:      rotate($rotation)
+    -moz-transform:         rotate($rotation)
+    -o-transform:           rotate($rotation)
+    transform:              rotate($rotation)
+
+    
+=zoomUp($time, $scale)
+    transition:             transform $time
+
+    &:hover
+        transform:          scale($scale)    
+
+
+=makeCard()
+    border-top:         .2rem solid $brand-pure-black
+    border-left:        .2rem solid $brand-pure-black
+    border-right:       .2rem solid $brand-pure-black
+
+    +mLinear-Gradient(to bottom right, $brand-white, $brand-gray)
+    
+    +zoomUp(.4s, .98)
+
+
+=mTransition($time, $mode) 
+    -ms-transition:         $time $mode
+    -webkit-transition:     $time $mode
+    -moz-transition:        $time $mode
+    -o-transition:          $time $mode
+    transition:             $time $mode
+
+
+=mLinear-Gradient($dir, $color1, $color2)
+    background-image:       -ms-linear-gradient($dir, $color1, $color2)
+    background-image:       -webkit-linear-gradient($dir, $color1, $color2)
+    background-image:       -moz-linear-gradient($dir, $color1, $color2)
+    background-image:       -o-linear-gradient($dir, $color1, $color2)
+    background-image:       linear-gradient($dir, $color1, $color2)

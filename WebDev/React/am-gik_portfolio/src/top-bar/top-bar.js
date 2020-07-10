@@ -17,7 +17,7 @@ class TopBar extends React.Component {
                         </a>
                     </div>
 
-                   <ChipButton />
+                   <ChipButton value="Search"/>
                 </div>
             </header>
         );
