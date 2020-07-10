@@ -3,12 +3,18 @@
 @import "./../sass/mixins"
 
 
+nav 
+    .container-fluid, .row, .col-sm-12
+        padding: 0
+        margin: 0
+
+
 .nav-card
     background-color:   $brand-black
     border:             2px solid $brand-white
 
     width:              11.5rem//13.95rem//11.625rem
-    height:             19.8rem//16.5rem
+    height:             17rem//19.8rem//16.5rem
 
     text-align:         center
 
@@ -46,4 +52,29 @@
             color:          $brand-red
             font-weight:    400
       
-  
+
+    &:hover   
+        transition: .4s
+        margin-top: -3rem
+        //+mRotate(7deg)
+
+
+.rotate-left
+    +mRotate(-7deg)
+
+    &:hover
+        +mRotate(0deg)
+
+.rotate-right
+    +mRotate(8deg)
+
+    &:hover
+        +mRotate(0deg)
+
+.compense-right
+    position: relative
+    left: 10px
+
+.compense-left
+    position: relative
+    right: 10px

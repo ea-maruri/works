@@ -16,12 +16,12 @@
   top: 1rem;
   height: 13vh;
   width: 100%;
+  padding: 0 5rem;
 }
 
 .flex-search-bar a img.mlogo {
   height: 12vh;
   width: auto;
-  margin-left: 2.5rem;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
@@ -36,7 +36,12 @@
 @media only screen and (max-width: 770px) {
   .flex-search-bar a img.mlogo {
     height: 9vh;
-    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .flex-search-bar {
+    padding: 0 1rem;
   }
 }
 /*# sourceMappingURL=top-bar.css.map */

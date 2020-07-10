@@ -9,7 +9,7 @@ class ChipButton extends React.Component {
         type="button"
         title="Click me!"
         id="search-chip"
-        className="search-circle"
+        className="button-chip search-circle"
         data-toggle="modal"
         data-target="#searchModal"
       >

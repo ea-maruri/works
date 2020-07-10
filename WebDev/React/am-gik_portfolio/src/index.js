@@ -4,15 +4,20 @@ import './index.css';
 
 
 // Components
-import App from './app/App'; // It is not used
-import TopBar from './top-bar/top-bar';
+import App from './app/App'; 
+import TopBar from './components/top-bar/top-bar';
+import PseudoNav from './components/pseudo-nav/pseudo-nav';
+
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <TopBar />
+    
+    <App />
+
+    <PseudoNav />
   </React.StrictMode>,
   document.getElementById('root')
 );

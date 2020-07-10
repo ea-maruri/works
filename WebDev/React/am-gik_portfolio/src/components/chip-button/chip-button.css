@@ -3,9 +3,7 @@
 /*Gradients*/
 /* Breakpoints */
 /* Sizes */
-.search-circle {
-  position: relative;
-  right: 5rem;
+.button-chip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +20,7 @@
   cursor: pointer;
   color: #f4f4f4;
   font-size: 0.7rem;
+  font-family: "Black Ops One", cursive;
   border-radius: 50%;
   -ms-box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.8);
@@ -33,21 +32,25 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.search-circle:hover {
+.button-chip:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media only screen and (max-width: 770px) {
-  .search-circle {
+  .button-chip {
     right: 1rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .search-circle {
+  .button-chip {
     width: 15vw;
     height: 15vw;
   }
+}
+
+.search-circle {
+  position: relative;
 }
 /*# sourceMappingURL=chip-button.css.map */
