@@ -1,15 +1,74 @@
+/* Index */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-image: url('./pool_table.png');
+  background-image: url("./pool_table.png");
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* Text */
+p {
+  color: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+}
+
+@media only screen and (max-width: 770px) {
+  p {
+    margin-top: 2rem;
+  }
+}
+
+p a {
+  color: #009BDB;
+}
+
+p a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Images */
+img.mimg {
+  width: 15vw;
+  height: auto;
+  min-width: 150px;
+  border-radius: 9px;
+  -ms-box-shadow: 0px 0px 7px 5px #262626;
+  -webkit-box-shadow: 0px 0px 7px 5px #262626;
+  -o-box-shadow: 0px 0px 7px 5px #262626;
+  box-shadow: 0px 0px 7px 5px #262626;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+img.mimg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* Spaces */
+.bottom-space {
+  margin-bottom: 24vh;
+}
+
+.top-space {
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .top-space {
+    margin-top: 11rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

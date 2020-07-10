@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,IAAI;CAGU;;AADtB,MAAM,MAAM,MAAM,MAAM,SAAS,EAAG,KAAK;EAH7C,AAAA,UAAU,CAAC;IAIH,MAAM,EAAE,KAAK;GAAK",
+    "mappings": "",
     "sources": [
         "pseudo-nav.sass"
     ],

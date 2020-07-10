@@ -5,10 +5,15 @@
 img.mlogo {
   height: 12vh;
   width: auto;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  border-radius: 9px;
+  -ms-box-shadow: 0px 0px 7px 2px #262626;
+  -webkit-box-shadow: 0px 0px 7px 2px #262626;
+  -o-box-shadow: 0px 0px 7px 2px #262626;
+  box-shadow: 0px 0px 7px 2px #262626;
 }
 
 img.mlogo:hover {

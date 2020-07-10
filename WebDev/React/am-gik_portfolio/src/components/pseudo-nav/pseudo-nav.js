@@ -6,9 +6,7 @@ import CardShape from "./../card-shape/card-shape";
 class PseudoNav extends React.Component {
   render() {
     return (
-      <nav>
-        
-        <div id="page-start" className="top-space"> </div>
+      <nav className="mb-5">
 
         <div className="container">
           <div className="row">
@@ -47,6 +45,7 @@ class PseudoNav extends React.Component {
             </div>
           </div>
         </div>
+
       </nav>
     );
   }

@@ -55,7 +55,8 @@ a > i:hover {
 }
 
 aside {
-  bottom: 30%;
+  z-index: 9999;
+  bottom: 40vh;
 }
 
 aside #marrow-container {
@@ -77,10 +78,8 @@ aside #marrow-container {
 }
 
 aside .arrow-container {
-  position: absolute;
   right: 1.2rem;
   bottom: 3.7rem;
-  position: fixed;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
