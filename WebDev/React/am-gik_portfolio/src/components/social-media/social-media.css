@@ -1,0 +1,128 @@
+/* Social Media */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.social-chip:hover + .social-container {
+  display: block;
+}
+
+.social-container {
+  left: .9rem;
+  display: none;
+  background-color: #f4f4f4;
+  width: 6.7rem;
+  height: 11rem;
+  border-radius: 10px;
+  -ms-box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.8);
+}
+
+.social-container:hover {
+  display: block;
+}
+
+.social-container:hover img {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.social-container h1, .social-container h2, .social-container h3, .social-container h4, .social-container h5, .social-container h5 {
+  color: #009BDB;
+}
+
+.social-container img {
+  cursor: pointer;
+}
+
+a > i {
+  color: #E81A2E;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+a > i:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+aside {
+  bottom: 30%;
+}
+
+aside #marrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+aside .arrow-container {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 3.7rem;
+  position: fixed;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+aside .arrow-container:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.line {
+  width: 0;
+  height: 9vh;
+  border-right: 3px dashed #f4f4f4;
+}
+
+.arrow {
+  border: dashed #f4f4f4;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .8rem;
+}
+
+.right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.left {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.up {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=social-media.css.map */

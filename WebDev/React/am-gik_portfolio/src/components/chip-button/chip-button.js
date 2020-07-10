@@ -8,10 +8,10 @@ class ChipButton extends React.Component {
       <button
         type="button"
         title="Click me!"
-        id="search-chip"
+        id={this.props.id}
         className="button-chip search-circle"
-        data-toggle="modal"
-        data-target="#searchModal"
+        data-toggle={this.props.dataToggle}
+        data-target={this.props.dataTarget}
       >
         {this.props.value}
       </button>

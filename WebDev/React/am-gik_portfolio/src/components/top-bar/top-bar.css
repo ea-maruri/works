@@ -2,24 +2,7 @@
 /*Gradients*/
 /* Breakpoints */
 /* Sizes */
-.flex-search-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 1rem;
-  height: 13vh;
-  width: 100%;
-  padding: 0 5rem;
-}
-
-.flex-search-bar a img.mlogo {
+img.mlogo {
   height: 12vh;
   width: auto;
   -webkit-transition: -webkit-transform 0.4s;
@@ -28,20 +11,14 @@
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.flex-search-bar a img.mlogo:hover {
+img.mlogo:hover {
   -webkit-transform: scale(1.27);
           transform: scale(1.27);
 }
 
 @media only screen and (max-width: 770px) {
-  .flex-search-bar a img.mlogo {
+  img.mlogo {
     height: 9vh;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .flex-search-bar {
-    padding: 0 1rem;
   }
 }
 /*# sourceMappingURL=top-bar.css.map */
