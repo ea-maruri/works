@@ -8,7 +8,7 @@ class NavCard extends React.Component {
         <div className="nav-card-content">
 
           <h3 className="nav-card-title">
-            <a title={this.props.title} href="./pages/about/about.html">
+            <a title={this.props.title} href={this.props.reference}>
               {this.props.title}
             </a>
           </h3>

@@ -1,0 +1,23 @@
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.items-container > i:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.items-container > i:hover > i.fa {
+  color: #E81A2E;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+}
+
+.items-container > i > i {
+  color: #E81A2E;
+}
+/*# sourceMappingURL=about.css.map */
