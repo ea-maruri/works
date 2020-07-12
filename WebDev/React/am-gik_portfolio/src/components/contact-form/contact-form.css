@@ -3,6 +3,34 @@
 /*Gradients*/
 /* Breakpoints */
 /* Sizes */
+.maboutform {
+  -ms-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 770px) {
+  .maboutform {
+    margin-top: 5rem;
+  }
+  .maboutform main {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 #mContactForm small {
   margin-top: .5rem;
   color: #262626;
