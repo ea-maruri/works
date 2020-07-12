@@ -1,0 +1,33 @@
+/* Contact Form */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+#mContactForm small {
+  margin-top: .5rem;
+  color: #262626;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.about-form small {
+  margin-top: .5rem;
+  color: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+input, textarea {
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D4D4D4), to(#f4f4f4));
+  background-image: linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  border-radius: 10px;
+}
+
+input:hover, textarea:hover {
+  border: 2px solid #262626;
+}
+/*# sourceMappingURL=contact-form.css.map */

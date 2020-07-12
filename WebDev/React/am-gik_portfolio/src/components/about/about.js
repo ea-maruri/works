@@ -6,6 +6,7 @@ import "./../../general.css";
 import App from "./../../app/App";
 import Footer from "./../footer/footer";
 import AboutCard from "./../about-card/about-card";
+import ContactForm from "./../contact-form/contact-form";
 
 // Images
 import Diamond from "./diamond-17.svg";
@@ -144,7 +145,7 @@ class About extends React.Component {
         <App />
 
         <header>
-          <h1 className="text-center">Know me</h1>
+          <h1 className="text-center mb-5">Know me</h1>
         </header>
 
         <main>
@@ -190,6 +191,14 @@ class About extends React.Component {
             </div>
           </div>
         </main>
+
+        <header className="my-5">
+          <h2 className="text-center">So, What Can I Do For You?</h2>
+        </header>
+
+        <section className="bottom-space pool-box py-5 px-3">
+          <ContactForm />
+        </section>
 
         <Footer />
       </div>
