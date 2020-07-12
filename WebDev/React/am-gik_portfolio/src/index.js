@@ -5,6 +5,7 @@ import "./index/index.css";
 // Components
 import Home from "./components/home/home";
 import About from "./components/about/about";
+import Portfolio from "./components/portfolio/portfolio";
 
 
 import * as serviceWorker from "./serviceWorker";
@@ -12,10 +13,11 @@ import * as serviceWorker from "./serviceWorker";
 // Put 
 // <Home />
 // <About />
+// <Portfolio />
 
 ReactDOM.render(
   <React.StrictMode>
-    <About />
+    <Portfolio />
   </React.StrictMode>,
   document.getElementById("root-index")
 );

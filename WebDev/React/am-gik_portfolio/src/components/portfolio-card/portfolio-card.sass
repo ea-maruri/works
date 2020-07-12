@@ -1,0 +1,50 @@
+/* Portfolio cards */
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+.mportfoliocard
+    background-color: $brand-white
+    width: 90%
+    margin: auto
+
+    .card-body
+        button
+            display: block
+            margin: auto
+    
+            a
+                padding: .7rem .7rem
+
+    ul > li 
+        text-align: center
+
+    img
+        +zoomUp(.4s, 1.1)
+        +mBorderR(8px)
+
+        max-height: 200px
+
+    p
+        font-family: $font-fourth
+        font-weight: 600
+        color: $brand-black
+
+
+.card
+    +mShadow(0px 0px 7px 5px $brand-black)
+    //width: 85%
+
+    .card-header
+        height: 4rem
+        background-color: $brand-black
+
+        h5
+            text-align: center
+            margin-top: .4rem
+
+            a
+                font-size: 1.4rem
+                font-family: $font-fourth
+                color: $brand-red
+                font-weight: 600
+                text-transform: uppercase
