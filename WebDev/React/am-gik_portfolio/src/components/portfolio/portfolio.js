@@ -64,7 +64,7 @@ class Portfolio extends React.Component {
 
     // IA
     const eightPuzzleIAContent = (
-      <p class="card-text">
+      <p className="card-text">
         The 8-puzzle is a square board with 9 positions, filled by 8 numbered
         tiles and one gap. At any point, a tile adjacent to the gap can be moved
         into the gap, creating a new gap position. In other words the gap can be
@@ -80,7 +80,7 @@ class Portfolio extends React.Component {
     );
 
     const eightQueensAIContent = (
-      <p class="card-text">
+      <p className="card-text">
         A JAVA program for resolving 8 Queens Problem with{" "}
         <b>genetic algorithm</b>. The eight queens puzzle is the problem of
         placing eight chess queens on an 8×8 chessboard so that no two queens
@@ -93,7 +93,7 @@ class Portfolio extends React.Component {
     );
 
     const tictactoeContentIA = (
-      <p class="card-text">
+      <p className="card-text">
         A Java program which uses minimax algorithm to play{" "}
         <strong>tic tac toe.</strong>
       </p>
@@ -103,7 +103,7 @@ class Portfolio extends React.Component {
     );
 
     const vacuumWorldContent = (
-      <p class="card-text">
+      <p className="card-text">
         A Java program which simulates a vaccum on a square room with obstacles.
       </p>
     );
@@ -111,7 +111,7 @@ class Portfolio extends React.Component {
 
     // Networking
     const arpProtocolContent = (
-      <p class="card-text">
+      <p className="card-text">
         A Python program using ARP Protocol to determine NIC (Network Interface
         Card) of some devices. 
         <br></br> <br></br>
@@ -123,7 +123,7 @@ class Portfolio extends React.Component {
 
     // Design
     const portraitContent = (
-      <p class="card-text">A basic portrait made in Illustrator.</p>
+      <p className="card-text">A basic portrait made in Illustrator.</p>
     );
     const portraitTechs = <div>Illustrator, Design</div>;
 

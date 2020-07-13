@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index/index.css";
 
+
 // Components
 import Home from "./components/home/home";
 import About from "./components/about/about";

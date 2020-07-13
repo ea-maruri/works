@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,qBAAqB",
+    "sources": [
+        "common-elements.sass"
+    ],
+    "names": [],
+    "file": "common-elements.css"
+}
