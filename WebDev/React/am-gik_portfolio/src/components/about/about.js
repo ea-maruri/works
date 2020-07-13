@@ -145,7 +145,7 @@ class About extends React.Component {
         <App />
 
         <header>
-          <h1 className="text-center mb-5">Know me</h1>
+          <h1 className="text-center mb-5 mtitle">Know me</h1>
         </header>
 
         <main>

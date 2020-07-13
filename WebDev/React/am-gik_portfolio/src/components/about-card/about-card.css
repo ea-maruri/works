@@ -67,16 +67,11 @@
 }
 
 .mcard .mcard-content > i {
-  width: 225px;
+  width: 235px;
   margin-top: .8rem;
 }
 
-.mcard .mcard-content > i:hover {
-  cursor: pointer;
-  font-weight: 900;
-}
-
-.mcard .mcard-content > i:hover i.fa {
+.mcard .mcard-content > i i.fa {
   color: #E81A2E;
   -webkit-transition: -webkit-transform .4s;
   transition: -webkit-transform .4s;

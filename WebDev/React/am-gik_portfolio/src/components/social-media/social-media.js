@@ -45,7 +45,7 @@ class SocialMedia extends React.Component {
                     href="https://www.facebook.com/alejandro.maruri.790"
                     target="_blank"
                   >
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
                   </a>
 
                   <a
@@ -54,7 +54,7 @@ class SocialMedia extends React.Component {
                     href="https://www.instagram.com/ea_maruri/"
                     target="_blank"
                   >
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ class SocialMedia extends React.Component {
                     href="https://github.com/ea-maruri/"
                     target="_blank"
                   >
-                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <i className="fa fa-github" aria-hidden="true"></i>
                   </a>
 
                   <a
@@ -78,7 +78,7 @@ class SocialMedia extends React.Component {
                     href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt"
                     target="_blank"
                   >
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -102,11 +102,11 @@ class SocialMedia extends React.Component {
           </footer>
         </div>
 
-        <div id="marrow-container" class="position-absolute position-fixed arrow-container">
-          <div class="line"></div>
+        <div id="marrow-container" className="position-absolute position-fixed arrow-container">
+          <div className="line"></div>
 
           <p>
-            <i id="marrow" class="arrow down"></i>
+            <i id="marrow" className="arrow down"></i>
           </p>
         </div>
       </aside>

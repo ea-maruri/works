@@ -44,6 +44,16 @@ code {
 }
 
 /* Text */
+h1 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
+}
+
 @media only screen and (max-width: 1060px) {
   h1 {
     font-size: 2.4rem;
@@ -72,6 +82,16 @@ code {
   h1 {
     font-size: 1.2rem;
   }
+}
+
+h2 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -104,6 +124,16 @@ code {
   }
 }
 
+h3 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
+}
+
 @media only screen and (max-width: 1060px) {
   h3 {
     font-size: 2rem;
@@ -132,6 +162,16 @@ code {
   h3 {
     font-size: 1.16rem;
   }
+}
+
+h4 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -164,6 +204,16 @@ code {
   }
 }
 
+h5 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
+}
+
 @media only screen and (max-width: 1060px) {
   h5 {
     font-size: 1.7rem;
@@ -194,6 +244,16 @@ code {
   }
 }
 
+h6 {
+  font-family: "Black Ops One", cursive;
+  color: #f4f4f4;
+  -ms-text-shadow: 3px 3px 6px #262626;
+  -webkit-text-shadow: 3px 3px 6px #262626;
+  -moz-text-shadow: 3px 3px 6px #262626;
+  -o-text-shadow: 3px 3px 6px #262626;
+  text-shadow: 3px 3px 6px #262626;
+}
+
 @media only screen and (max-width: 1060px) {
   h6 {
     font-size: 1.6rem;
@@ -222,6 +282,10 @@ code {
   h6 {
     font-size: 1.1rem;
   }
+}
+
+.mtitle {
+  font-size: 3.2rem;
 }
 
 p {

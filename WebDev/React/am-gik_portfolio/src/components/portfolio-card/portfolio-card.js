@@ -5,65 +5,56 @@ class PortfolioCard extends React.Component {
   render() {
     return (
       <div>
-        <div
-          id="webAccordion"
-          role="tablist"
-          aria-multiselectable="true"
-        >
-          <div className="card">
-            <div className="card-header" role="tab" id="webAccordionHeader">
-              <h5 className="mb-0">
+        <div id={this.props.cardId} role="tablist" aria-multiselectable="true">
+          <div className="card w-75 mx-auto">
+            <div className="card-header" role="tab" id={this.props.headerId}>
+              <h5>
                 <a
                   data-toggle="collapse"
-                  data-parent="#webAccordion"
-                  href="#webAccordionContent"
+                  data-parent={this.props.dataParent}
+                  href={this.props.href}
                   aria-expanded="true"
-                  aria-controls="webAccordionContent"
+                  aria-controls={this.props.webAccordionContent}
                 >
-                  AM-GIK Portfolio
+                  {this.props.cardTitle}
                 </a>
               </h5>
             </div>
 
             <div
-              id="webAccordionContent"
+              id={this.props.contentId}
               className="collapse in"
               role="tabpanel"
-              aria-labelledby="webAccordionHeader"
+              aria-labelledby={this.props.webAccordionHeader}
             >
               <div className="card-body">
                 <div className="card mportfoliocard">
                   <img
-                    src="./../../public/assets/images/works/web/home.png"
                     className="card-img-top"
-                    alt="..."
+                    src={this.props.imgSrc}
+                    alt={this.props.imgAlt}
                   ></img>
                   <div className="card-body">
-                    <h5 className="card-title">Portfolio</h5>
+                    <h5 className="card-title">{this.props.innerCardTitle}</h5>
 
-                    <p className="card-text">
-                      A brand portfolio for Alejandro Maruri.
-                      <br></br>
-                      <br></br>
-                      It is deployed on <strong>github pages</strong>. You are
-                      using it now.
-                      <br></br>
-                      <br></br>
-                      Many knowledge in HTML, CSS, SASS, and JS is used.
-                    </p>
+                    <div>
+                      {this.props.content} 
+                    </div>
+
                   </div>
 
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item">
-                      HTML, SASS, CSS, Bootstrap, JS
-                    </li>
+                    <li className="list-group-item">{this.props.listTechs}</li>
                   </ul>
 
                   <div className="card-body">
                     <button type="button" className="btn-border-primary">
-                      <a href="./../../index.html" target="_blank">
-                        <i className="fa fa-home" aria-hidden="true"></i> Go to
-                        Home
+                      <a href={this.props.buttonRef} target={this.props.buttonTarget}>
+                        <i
+                          className={this.props.buttonImgClass}
+                          aria-hidden="true"
+                        ></i>{" "}
+                        {this.props.buttonText}
                       </a>
                     </button>
                   </div>
