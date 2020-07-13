@@ -2,23 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index/index.css";
 
-
 // Components
-import Home from "./components/home/home";
-import About from "./components/about/about";
-import Portfolio from "./components/portfolio/portfolio";
-
+import App from "./app/App";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 
 import * as serviceWorker from "./serviceWorker";
 
-// Put 
+// Put
 // <Home />
 // <About />
 // <Portfolio />
+// <CommonElement />
+//history={hashHistory}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portfolio />
+    <App />
   </React.StrictMode>,
   document.getElementById("root-index")
 );
