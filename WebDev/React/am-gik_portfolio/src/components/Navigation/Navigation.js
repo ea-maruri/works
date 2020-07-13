@@ -14,12 +14,9 @@ import Portfolio from "./../../pages/Portfolio";
 import imgDiamond from "./diamond-17.svg";
 import imgSpades from "./symbols-spades-light.svg";
 
-class Navigation extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="top-space">
-          <nav className="d-flex justify-content-around mt-5">
+/*
+<div className="top-space">
+          <nav className="d-flex justify-content-around">
             <NavCard
               title="Home"
               _to="/home"
@@ -40,7 +37,12 @@ class Navigation extends React.Component {
             />
           </nav>
         </div>
+*/
 
+class Navigation extends React.Component {
+  render() {
+    return (
+      <Router>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
 
@@ -51,7 +53,7 @@ class Navigation extends React.Component {
           <Route path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/home">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>

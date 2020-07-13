@@ -18,11 +18,11 @@ class Nav extends React.Component {
           <div className="row nav-cards">
             <div className="col-sm-12 d-flex justify-content-center">
               <div className="rotate-left compense-right">
-                <NavCard imgUrl={spades} imgAlt="Spades" title="Portfolio" reference="./pages/portfolio/portfolio.html"/>
+                <NavCard imgUrl={spades} imgAlt="Spades" title="Portfolio" reference="./portfolio"/>
               </div>
 
               <div className="rotate-right compense-left">
-                <NavCard imgUrl={diamond} imgAlt="Diamond" title="About" reference="./pages/about/about.html"/>
+                <NavCard imgUrl={diamond} imgAlt="Diamond" title="About" reference="./about"/>
               </div>
             </div>
           </div>

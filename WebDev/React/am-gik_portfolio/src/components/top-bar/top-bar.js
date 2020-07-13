@@ -15,7 +15,7 @@ class TopBar extends React.Component {
               <div className="col-sm-12">
                 <div className="d-flex justify-content-between align-itmes-center mt-4">
                   <div className="search-bar-logo">
-                    <a href="./index.html">
+                    <a href="./">
                       <img
                         title="Home"
                         className="mlogo"
