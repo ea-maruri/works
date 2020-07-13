@@ -86,16 +86,16 @@ class About extends React.Component {
             <div className="col">
               <div className="items-container">
                 <i className="d-block text-center mt-4 ml-4">
-                  Team-Work <i class="fa fa-users" aria-hidden="true"></i>
+                  Team-Work <i className="fa fa-users" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
-                  Autodidact <i class="fa fa-leanpub" aria-hidden="true"></i>
+                  Autodidact <i className="fa fa-leanpub" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
-                  Reflexive <i class="fa fa-book" aria-hidden="true"></i>
+                  Reflexive <i className="fa fa-book" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
-                  Responsible <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  Responsible <i className="fa fa-briefcase" aria-hidden="true"></i>
                 </i>
               </div>
             </div>
@@ -112,25 +112,25 @@ class About extends React.Component {
             <div className="col">
               <div className="items-container">
                 <i className="d-block text-center mt-2 ml-4">
-                  HTML-CSS <i class="fa fa-html5" aria-hidden="true"></i>
+                  HTML-CSS <i className="fa fa-html5" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  Java <i class="fa fa-code" aria-hidden="true"></i>{" "}
+                  Java <i className="fa fa-code" aria-hidden="true"></i>{" "}
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  Python <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  Python <i className="fa fa-code-fork" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  C++ <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  C++ <i className="fa fa-code-fork" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  C# <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  C# <i className="fa fa-code-fork" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  Javascript <i class="fa fa-code" aria-hidden="true"></i>{" "}
+                  Javascript <i className="fa fa-code" aria-hidden="true"></i>{" "}
                 </i>
                 <i className="d-block text-center mt-2 ml-4">
-                  MySQL <i class="fa fa-database" aria-hidden="true"></i>
+                  MySQL <i className="fa fa-database" aria-hidden="true"></i>
                 </i>
               </div>
             </div>

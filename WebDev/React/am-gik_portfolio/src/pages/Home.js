@@ -20,7 +20,7 @@ class Home extends React.Component {
             <div className="container mt-5">
               <div className="jumbotron">
                 <div className="pool-box mt-5">
-                  <h1 class="msuper-title">
+                  <h1 className="msuper-title">
                     We all HAVE<br></br>MAGIC<br></br>WITHIN US
                   </h1>
                 </div>

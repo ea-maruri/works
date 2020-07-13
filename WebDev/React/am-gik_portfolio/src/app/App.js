@@ -7,7 +7,13 @@ import Home from "./../pages/Home";
 import About from "./../pages/About";
 import Portfolio from "./../pages/Portfolio";
 
+import Nav from "./../components/Navigation/Navigation";
+
 function App() {
+  return <Nav />;
+}
+
+function mNav() {
   return (
     <Router>
       <div>
@@ -24,9 +30,8 @@ function App() {
             </li>
           </ul>
         </nav>
-
         {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
             <About />
@@ -42,6 +47,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
