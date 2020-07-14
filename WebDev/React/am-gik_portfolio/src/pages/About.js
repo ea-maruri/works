@@ -38,9 +38,7 @@ class About extends React.Component {
         <p>
           Let's{" "}
           <strong>
-            <em>
-              work together
-            </em>
+            <em>work together</em>
           </strong>
           .
         </p>
@@ -89,13 +87,15 @@ class About extends React.Component {
                   Team-Work <i className="fa fa-users" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
-                  Autodidact <i className="fa fa-leanpub" aria-hidden="true"></i>
+                  Autodidact{" "}
+                  <i className="fa fa-leanpub" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
                   Reflexive <i className="fa fa-book" aria-hidden="true"></i>
                 </i>
                 <i className="d-block text-center mt-4 ml-4">
-                  Responsible <i className="fa fa-briefcase" aria-hidden="true"></i>
+                  Responsible{" "}
+                  <i className="fa fa-briefcase" aria-hidden="true"></i>
                 </i>
               </div>
             </div>
@@ -147,46 +147,44 @@ class About extends React.Component {
           <h1 className="text-center mb-5 mtitle">Know me</h1>
         </header>
 
-        <main>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <AboutCard
-                  imgUrl={Diamond}
-                  alternative={"Diamond"}
-                  value={firstCardValue}
-                  title={"What do I do?"}
-                />
-              </div>
-
-              <div className="col-sm-12 col-md-6">
-                <AboutCard
-                  imgUrl={Club}
-                  alternative={"Club"}
-                  value={secondCardValue}
-                  title={"Hard-Skills"}
-                />
-              </div>
+        <main className="container">
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <AboutCard
+                imgUrl={Diamond}
+                alternative={"Diamond"}
+                value={firstCardValue}
+                title={"What do I do?"}
+              />
             </div>
 
-            <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <AboutCard
-                  imgUrl={Heart}
-                  alternative={"Heart"}
-                  value={thirdCardValue}
-                  title={"Soft-Skills"}
-                />
-              </div>
+            <div className="col-sm-12 col-md-6">
+              <AboutCard
+                imgUrl={Club}
+                alternative={"Club"}
+                value={secondCardValue}
+                title={"Hard-Skills"}
+              />
+            </div>
+          </div>
 
-              <div className="col-sm-12 col-md-6">
-                <AboutCard
-                  imgUrl={Spades}
-                  alternative={"Spade"}
-                  value={fourthCardValue}
-                  title={"Hard-Skills"}
-                />
-              </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <AboutCard
+                imgUrl={Heart}
+                alternative={"Heart"}
+                value={thirdCardValue}
+                title={"Soft-Skills"}
+              />
+            </div>
+
+            <div className="col-sm-12 col-md-6">
+              <AboutCard
+                imgUrl={Spades}
+                alternative={"Spade"}
+                value={fourthCardValue}
+                title={"Hard-Skills"}
+              />
             </div>
           </div>
         </main>
@@ -195,7 +193,7 @@ class About extends React.Component {
           <h2 className="text-center">So, What Can I Do For You?</h2>
         </header>
 
-        <section className="bottom-space pool-box py-5 px-3">
+        <section className="bottom-space px-5">
           <ContactForm />
         </section>
 
