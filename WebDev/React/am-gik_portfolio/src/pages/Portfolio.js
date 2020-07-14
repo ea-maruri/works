@@ -113,10 +113,9 @@ class Portfolio extends React.Component {
     const arpProtocolContent = (
       <p className="card-text">
         A Python program using ARP Protocol to determine NIC (Network Interface
-        Card) of some devices. 
+        Card) of some devices.
         <br></br> <br></br>
-        Also, a pie image is displayed. Showing vendor
-        percentages.
+        Also, a pie image is displayed. Showing vendor percentages.
       </p>
     );
     const arpProtocolTechs = <div>Python, Networking, ARP, Matplotlib</div>;
@@ -131,255 +130,253 @@ class Portfolio extends React.Component {
       <div>
         <CommonElements />
 
-        <div className="container top-space">
+        <header className="container top-space">
           <div className="row">
             <div className="col-sm-12">
-              <header className="text-center">
-                <h1 className="mtitle">My Work</h1>
-              </header>
+              <h1 className="mtitle text-center top-space">My Work</h1>
             </div>
           </div>
-        </div>
+        </header>
 
-        <main>
-          <div className="container bottom-space mx-auto">
-            <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <header className="text-center my-5">
-                  <h2>Web Development</h2>
-                </header>
+        <main className="container bottom-space mx-auto">
+          <div className="row">
+            <div id="web-section" className="col-sm-12 col-md-6">
+              <header className="text-center my-5">
+                <h2>Web Development</h2>
+              </header>
 
-                <PortfolioCard
-                  cardId="webAccordion"
-                  headerId="webAccordionHeader"
-                  contentId="webAccordionContent"
-                  dataParent="#webAccordion"
-                  href="#webAccordionContent"
-                  ariaControls="webAccordionContent"
-                  ariaLabelledBy="webAccordionHeader"
-                  cardTitle="AM-GIK Portfolio"
-                  innerCardTitle="Portfolio"
-                  imgSrc={imgPortfolio}
-                  imgAlt="Portfolio img"
-                  content={portfolioContent}
-                  listTechs={portfolioTechs}
-                  buttonText="Go to Home"
-                  buttonImgClass="fa fa-home"
-                  buttonTarget="_blank"
-                  buttonRef="./../../index.html"
-                />
+              <PortfolioCard
+                cardId="webAccordion"
+                headerId="webAccordionHeader"
+                contentId="webAccordionContent"
+                dataParent="#webAccordion"
+                href="#webAccordionContent"
+                ariaControls="webAccordionContent"
+                ariaLabelledBy="webAccordionHeader"
+                cardTitle="AM-GIK Portfolio"
+                innerCardTitle="Portfolio"
+                imgSrc={imgPortfolio}
+                imgAlt="Portfolio img"
+                content={portfolioContent}
+                listTechs={portfolioTechs}
+                buttonText="Go to Home"
+                buttonImgClass="fa fa-home"
+                buttonTarget="_blank"
+                buttonRef="./../../index.html"
+              />
 
-                <PortfolioCard
-                  cardId="webAccordion1"
-                  headerId="webAccordion1Header"
-                  contentId="webAccordion1Content"
-                  dataParent="#webAccordion1"
-                  href="#webAccordion1Content"
-                  ariaControls="webAccordion1Content"
-                  ariaLabelledBy="webAccordion1Header"
-                  cardTitle="Basic Webpage"
-                  innerCardTitle="Webpage"
-                  imgSrc={imgBasicWeb}
-                  imgAlt="Web Page"
-                  content={basicWebContent}
-                  listTechs={basicWebTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/WebDev/Basic_WebSite"
-                />
-              </div>
-              <div className="col-sm-12 col-md-6">
-                <header className="text-center my-5">
-                  <h2>Programming</h2>
-                </header>
-
-                <PortfolioCard
-                  cardId="progAccordion"
-                  headerId="progAccordionHeader"
-                  contentId="progAccordionContent"
-                  dataParent="#progAccordion"
-                  href="#progAccordionContent"
-                  ariaControls="progAccordionContent"
-                  ariaLabelledBy="progAccordionHeader"
-                  cardTitle="Doubly Linked List"
-                  innerCardTitle="Doubly Linked List"
-                  imgSrc={imgDoublyLinked}
-                  imgAlt="D-L List"
-                  content={doublyListContent}
-                  listTechs={doublyListTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Programming/Java/Data_Sctructures/Doubly_Linked_List/src/src"
-                />
-
-                <PortfolioCard
-                  cardId="progAccordion1"
-                  headerId="progAccordion1Header"
-                  contentId="progAccordion1Content"
-                  dataParent="#progAccordion1"
-                  href="#progAccordion1Content"
-                  ariaControls="progAccordion1Content"
-                  ariaLabelledBy="progAccordion1Header"
-                  cardTitle="8 Queens Problem"
-                  innerCardTitle="8 Queens (Brute Force)"
-                  imgSrc={img8Queens}
-                  imgAlt="8 Queens"
-                  content={eightQueensContent}
-                  listTechs={eightQueensTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Programming/C%2B%2B/Basic/Chess"
-                />
-              </div>
+              <PortfolioCard
+                cardId="webAccordion1"
+                headerId="webAccordion1Header"
+                contentId="webAccordion1Content"
+                dataParent="#webAccordion1"
+                href="#webAccordion1Content"
+                ariaControls="webAccordion1Content"
+                ariaLabelledBy="webAccordion1Header"
+                cardTitle="Basic Webpage"
+                innerCardTitle="Webpage"
+                imgSrc={imgBasicWeb}
+                imgAlt="Web Page"
+                content={basicWebContent}
+                listTechs={basicWebTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/WebDev/Basic_WebSite"
+              />
             </div>
-
-            <div className="row mt-5">
-              <div className="col-sm-12 col-md-6">
-                <header className="text-center my-5">
-                  <h2>Artificial Intelligence</h2>
-                </header>
-
-                <PortfolioCard
-                  cardId="iaAccordion"
-                  headerId="iaAccordionHeader"
-                  contentId="iaAccordionContent"
-                  dataParent="#iaAccordion"
-                  href="#iaAccordionContent"
-                  ariaControls="iaAccordionContent"
-                  ariaLabelledBy="iaAccordionHeader"
-                  cardTitle="8 Puzzle Problem"
-                  innerCardTitle="8 Puzzle"
-                  imgSrc={img8Puzzle}
-                  imgAlt="8 Puzzle"
-                  content={eightPuzzleIAContent}
-                  listTechs={eightPuzzleIATechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Puzzle_AStar"
-                />
-
-                <PortfolioCard
-                  cardId="iaAccordion1"
-                  headerId="iaAccordion1Header"
-                  contentId="iaAccordion1Content"
-                  dataParent="#iaAccordion1"
-                  href="#iaAccordion1Content"
-                  ariaControls="iaAccordion1Content"
-                  ariaLabelledBy="iaAccordion1Header"
-                  cardTitle="8 Queens Problem"
-                  innerCardTitle="8 Queens"
-                  imgSrc={img8QueenAI}
-                  imgAlt="8 Queens"
-                  content={eightQueensAIContent}
-                  listTechs={eightQueensTechsAI}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Queens"
-                />
-
-                <PortfolioCard
-                  cardId="iaAccordion2"
-                  headerId="iaAccordion2Header"
-                  contentId="iaAccordion2Content"
-                  dataParent="#iaAccordion2"
-                  href="#iaAccordion2Content"
-                  ariaControls="iaAccordion2Content"
-                  ariaLabelledBy="iaAccordion2Header"
-                  cardTitle="Tic Tac Toe"
-                  innerCardTitle="Tic Tac Toe"
-                  imgSrc={imgTicTacToe}
-                  imgAlt="Tic Tac Toe"
-                  content={tictactoeContentIA}
-                  listTechs={tictactoeTechsIA}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/TicTacToe"
-                />
-
-                <PortfolioCard
-                  cardId="iaAccordion3"
-                  headerId="iaAccordion3Header"
-                  contentId="iaAccordion3Content"
-                  dataParent="#iaAccordion3"
-                  href="#iaAccordion3Content"
-                  ariaControls="iaAccordion3Content"
-                  ariaLabelledBy="iaAccordion3Header"
-                  cardTitle="Vacuum World"
-                  innerCardTitle="The Vacuum World"
-                  imgSrc={imgVacuumWorld}
-                  imgAlt="Vacuum"
-                  content={vacuumWorldContent}
-                  listTechs={vacuumWorldTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World"
-                />
-              </div>
-              <div className="col-sm-12 col-md-6">
-                <header className="text-center my-5">
-                  <h2>Networking</h2>
-                </header>
-
-                <PortfolioCard
-                  cardId="netAccordion"
-                  headerId="netAccordionHeader"
-                  contentId="netAccordionContent"
-                  dataParent="#netAccordion"
-                  href="#netAccordionContent"
-                  ariaControls="netAccordionContent"
-                  ariaLabelledBy="netAccordionHeader"
-                  cardTitle="ARP Protocol"
-                  innerCardTitle="ARP Protocol (checking devices)"
-                  imgSrc={imgARPProtocol}
-                  imgAlt="ARP Protocol"
-                  content={arpProtocolContent}
-                  listTechs={arpProtocolTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Networking/ARP_Protocol/ARP_Protocol"
-                />
-              </div>
-            </div>
-
-            <div className="row mt-5">
-              <div className="col"></div>
-
-              <div className="col-sm-10">
-                <header className="text-center my-5">
-                  <h2>Design</h2>
-                </header>
-
-                <PortfolioCard
-                  cardId="desAccordion"
-                  headerId="desAccordionHeader"
-                  contentId="desAccordionContent"
-                  dataParent="#desAccordion"
-                  href="#desAccordionContent"
-                  ariaControls="desAccordionContent"
-                  ariaLabelledBy="desAccordionHeader"
-                  cardTitle="Portrait"
-                  innerCardTitle="Portrait"
-                  imgSrc={imgPortrait}
-                  imgAlt="Portrait"
-                  content={portraitContent}
-                  listTechs={portraitTechs}
-                  buttonText="See on Github"
-                  buttonImgClass="fa fa-github"
-                  buttonTarget="_blank"
-                  buttonRef="https://github.com/ea-maruri/works/tree/master/Design/Illustrator/Self_Portrait"
-                />
-              </div>
             
-              <div className="col"></div>
+            <div id="prog-section" className="col-sm-12 col-md-6">
+              <header className="text-center my-5">
+                <h2>Programming</h2>
+              </header>
+
+              <PortfolioCard
+                cardId="progAccordion"
+                headerId="progAccordionHeader"
+                contentId="progAccordionContent"
+                dataParent="#progAccordion"
+                href="#progAccordionContent"
+                ariaControls="progAccordionContent"
+                ariaLabelledBy="progAccordionHeader"
+                cardTitle="Doubly Linked List"
+                innerCardTitle="Doubly Linked List"
+                imgSrc={imgDoublyLinked}
+                imgAlt="D-L List"
+                content={doublyListContent}
+                listTechs={doublyListTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Programming/Java/Data_Sctructures/Doubly_Linked_List/src/src"
+              />
+
+              <PortfolioCard
+                cardId="progAccordion1"
+                headerId="progAccordion1Header"
+                contentId="progAccordion1Content"
+                dataParent="#progAccordion1"
+                href="#progAccordion1Content"
+                ariaControls="progAccordion1Content"
+                ariaLabelledBy="progAccordion1Header"
+                cardTitle="8 Queens Problem"
+                innerCardTitle="8 Queens (Brute Force)"
+                imgSrc={img8Queens}
+                imgAlt="8 Queens"
+                content={eightQueensContent}
+                listTechs={eightQueensTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Programming/C%2B%2B/Basic/Chess"
+              />
             </div>
+          </div>
+
+          <div className="row mt-5">
+            <div id="ai-section" className="col-sm-12 col-md-6">
+              <header className="text-center my-5">
+                <h2>Artificial Intelligence</h2>
+              </header>
+
+              <PortfolioCard
+                cardId="iaAccordion"
+                headerId="iaAccordionHeader"
+                contentId="iaAccordionContent"
+                dataParent="#iaAccordion"
+                href="#iaAccordionContent"
+                ariaControls="iaAccordionContent"
+                ariaLabelledBy="iaAccordionHeader"
+                cardTitle="8 Puzzle Problem"
+                innerCardTitle="8 Puzzle"
+                imgSrc={img8Puzzle}
+                imgAlt="8 Puzzle"
+                content={eightPuzzleIAContent}
+                listTechs={eightPuzzleIATechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Puzzle_AStar"
+              />
+
+              <PortfolioCard
+                cardId="iaAccordion1"
+                headerId="iaAccordion1Header"
+                contentId="iaAccordion1Content"
+                dataParent="#iaAccordion1"
+                href="#iaAccordion1Content"
+                ariaControls="iaAccordion1Content"
+                ariaLabelledBy="iaAccordion1Header"
+                cardTitle="8 Queens Problem"
+                innerCardTitle="8 Queens"
+                imgSrc={img8QueenAI}
+                imgAlt="8 Queens"
+                content={eightQueensAIContent}
+                listTechs={eightQueensTechsAI}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Queens"
+              />
+
+              <PortfolioCard
+                cardId="iaAccordion2"
+                headerId="iaAccordion2Header"
+                contentId="iaAccordion2Content"
+                dataParent="#iaAccordion2"
+                href="#iaAccordion2Content"
+                ariaControls="iaAccordion2Content"
+                ariaLabelledBy="iaAccordion2Header"
+                cardTitle="Tic Tac Toe"
+                innerCardTitle="Tic Tac Toe"
+                imgSrc={imgTicTacToe}
+                imgAlt="Tic Tac Toe"
+                content={tictactoeContentIA}
+                listTechs={tictactoeTechsIA}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/TicTacToe"
+              />
+
+              <PortfolioCard
+                cardId="iaAccordion3"
+                headerId="iaAccordion3Header"
+                contentId="iaAccordion3Content"
+                dataParent="#iaAccordion3"
+                href="#iaAccordion3Content"
+                ariaControls="iaAccordion3Content"
+                ariaLabelledBy="iaAccordion3Header"
+                cardTitle="Vacuum World"
+                innerCardTitle="The Vacuum World"
+                imgSrc={imgVacuumWorld}
+                imgAlt="Vacuum"
+                content={vacuumWorldContent}
+                listTechs={vacuumWorldTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World"
+              />
+            </div>
+            
+            <div id="net-section" className="col-sm-12 col-md-6">
+              <header className="text-center my-5">
+                <h2>Networking</h2>
+              </header>
+
+              <PortfolioCard
+                cardId="netAccordion"
+                headerId="netAccordionHeader"
+                contentId="netAccordionContent"
+                dataParent="#netAccordion"
+                href="#netAccordionContent"
+                ariaControls="netAccordionContent"
+                ariaLabelledBy="netAccordionHeader"
+                cardTitle="ARP Protocol"
+                innerCardTitle="ARP Protocol (checking devices)"
+                imgSrc={imgARPProtocol}
+                imgAlt="ARP Protocol"
+                content={arpProtocolContent}
+                listTechs={arpProtocolTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Networking/ARP_Protocol/ARP_Protocol"
+              />
+            </div>
+          </div>
+
+          <div className="row mt-5">
+            <div id="des-section" className="col"></div>
+
+            <div className="col-sm-10">
+              <header className="text-center my-5">
+                <h2>Design</h2>
+              </header>
+
+              <PortfolioCard
+                cardId="desAccordion"
+                headerId="desAccordionHeader"
+                contentId="desAccordionContent"
+                dataParent="#desAccordion"
+                href="#desAccordionContent"
+                ariaControls="desAccordionContent"
+                ariaLabelledBy="desAccordionHeader"
+                cardTitle="Portrait"
+                innerCardTitle="Portrait"
+                imgSrc={imgPortrait}
+                imgAlt="Portrait"
+                content={portraitContent}
+                listTechs={portraitTechs}
+                buttonText="See on Github"
+                buttonImgClass="fa fa-github"
+                buttonTarget="_blank"
+                buttonRef="https://github.com/ea-maruri/works/tree/master/Design/Illustrator/Self_Portrait"
+              />
+            </div>
+
+            <div className="col"></div>
           </div>
         </main>
 

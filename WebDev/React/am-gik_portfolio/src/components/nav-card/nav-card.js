@@ -1,12 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./nav-card.css";
 
-// Pages
-import Home from "./../../pages/Home";
-import About from "./../../pages/About";
-import Portfolio from "./../../pages/Portfolio";
 
 class NavCard extends React.Component {
   render() {

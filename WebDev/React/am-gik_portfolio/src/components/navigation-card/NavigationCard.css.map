@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,qBAAqB",
-    "sources": [
-        "NavigationCard.sass"
-    ],
-    "names": [],
-    "file": "NavigationCard.css"
-}

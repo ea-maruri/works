@@ -14,31 +14,31 @@ class PseudoNav extends React.Component {
 
               <CardShape 
                 title="Web"
-                href="#web-card" 
+                href="./portfolio#web-section" 
                 itemClass="fa fa-code" 
               />
 
               <CardShape
                 title="Programming"
-                href="#prog-card"
+                href="./portfolio#prog-section"
                 itemClass="fa fa-file-code-o"
               />
 
               <CardShape
                 title="Artificial Intelligence"
-                href="#ia-card"
+                href="./portfolio#ia-section"
                 itemClass="fa fa-address-card"
               />
 
               <CardShape
                 title="Nerworking"
-                href="#net-card"
+                href="./portfolio#net-section"
                 itemClass="fa fa-code-fork"
               />
 
               <CardShape
                 title="Design"
-                href="#des-card"
+                href="./portfolio#des-section"
                 itemClass="fa fa-desktop"
               />
 

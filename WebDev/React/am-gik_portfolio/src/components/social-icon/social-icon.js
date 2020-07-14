@@ -11,6 +11,7 @@ class SocialIcon extends React.Component {
           title={this.props.title}
           href={this.props.link}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className={this.props.icon + " social-icon"} aria-hidden="true"></i>
         </a>

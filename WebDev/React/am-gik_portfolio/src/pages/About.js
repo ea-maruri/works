@@ -39,7 +39,7 @@ class About extends React.Component {
           Let's{" "}
           <strong>
             <em>
-              <a href="#">work together</a>
+              work together
             </em>
           </strong>
           .

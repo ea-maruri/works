@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./Navigation.css";
 
-import NavCard from "./../navigation-card/NavigationCard";
 
 // Pages
 import Home from "./../../pages/Home";
@@ -11,8 +10,9 @@ import About from "./../../pages/About";
 import Portfolio from "./../../pages/Portfolio";
 
 // Images
-import imgDiamond from "./diamond-17.svg";
-import imgSpades from "./symbols-spades-light.svg";
+//import imgDiamond from "./diamond-17.svg";
+//import imgSpades from "./symbols-spades-light.svg";
+
 
 /*
 <div className="top-space">

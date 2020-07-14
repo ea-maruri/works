@@ -51,7 +51,6 @@ class ContactForm extends React.Component {
                           id="modal_txt_request"
                           className="form-control"
                           name=""
-                          id=""
                           rows="5"
                           placeholder="Your Request..."
                         ></textarea>
