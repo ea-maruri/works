@@ -5,7 +5,6 @@
 /* Sizes */
 .mportfoliocard {
   background-color: #f4f4f4;
-  width: 90%;
   margin: auto;
 }
 
@@ -49,21 +48,113 @@
   box-shadow: 0px 0px 7px 5px #262626;
 }
 
-.card .card-header {
+.card h5.card-header {
   height: 4rem;
   background-color: #262626;
-}
-
-.card .card-header h5 {
+  color: #E81A2E;
   text-align: center;
-  margin-top: .4rem;
 }
 
-.card .card-header h5 a {
+.card h5.card-header a {
   font-size: 1.4rem;
   font-family: "Roboto Mono", monospace;
   color: #E81A2E;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.card-title {
+  color: #E81A2E;
+}
+
+.btn-border-primary {
+  border: 1px solid #E81A2E;
+  background-clip: border-box;
+  background: none;
+  color: #E81A2E;
+  border-radius: 10px;
+  height: 2rem;
+  font-family: "Black Ops One", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+.btn-border-primary a {
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  text-decoration: none;
+  color: #E81A2E;
+}
+
+.btn-border-primary:hover {
+  background-color: #E81A2E;
+  color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#E81A2E), to(#D4D4D4));
+  background-image: linear-gradient(to bottom right, #E81A2E, #D4D4D4);
+}
+
+.btn-border-primary:hover a {
+  color: #f4f4f4;
+}
+
+.btn-border-secondary {
+  border: 2px solid #009BDB;
+  background-clip: border-box;
+  background: none;
+  color: #009BDB;
+  border-radius: 40px;
+  width: 75%;
+  height: 2.5rem;
+  font-family: "Bungee", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.btn-border-secondary:hover {
+  background-color: #009BDB;
+  color: #f4f4f4;
+}
+
+.btn-border-black {
+  border: 2px solid #262626;
+  background-clip: border-box;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f4f4f4), to(#D4D4D4));
+  background-image: linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  color: #262626;
+  border-radius: 10px;
+  height: 2rem;
+  font-family: "Black Ops One", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .2rem 2rem;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+.btn-border-black a {
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  text-decoration: none;
+  color: #E81A2E;
+}
+
+.btn-border-black:hover {
+  background-color: #262626;
+  color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#262626), to(#D4D4D4));
+  background-image: linear-gradient(to bottom right, #262626, #D4D4D4);
+}
+
+.btn-border-black:hover a {
+  color: #f4f4f4;
 }
 /*# sourceMappingURL=portfolio-card.css.map */
