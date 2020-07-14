@@ -3,16 +3,17 @@ import "./social-media.css";
 
 // Components
 import ChipButton from "./../chip-button/chip-button";
+import SocialIcon from "./../social-icon/social-icon";
+import Arrow from "./../arrow/arrow";
 
 // Images
 import Heart from "./symbol-hearts.svg";
-
 
 class SocialMedia extends React.Component {
   render() {
     return (
       <aside className="position-absolute">
-        <div className="social-chip position-absolute position-fixed">
+        <div className="position-absolute position-fixed social-chip ">
           <ChipButton
             id="social-chip"
             value="Get in touch"
@@ -22,93 +23,70 @@ class SocialMedia extends React.Component {
           />
         </div>
 
-        <div className="social-container position-relative position-fixed mt-5">
-          <header>
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col">
-                  <h3 className="text-center">
-                    Social
-                  </h3>
-                </div>
+        <div className="position-relative position-fixed mt-5 social-container">
+          <header className="container-fluid mt-2">
+            <div className="row">
+              <div className="col">
+                <h3 className="text-center">Social</h3>
               </div>
             </div>
           </header>
 
           <div className="container-fluid">
-            <div className="row mt-2">
-              <div className="col">
-                <div className="d-flex justify-content-between">
-                  <a
-                    id="facebook-link"
-                    title="Facebook"
-                    href="https://www.facebook.com/alejandro.maruri.790"
-                    target="_blank"
-                  >
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
+            <div className="row mt-2 p-2">
+              <div className="col d-flex justify-content-between">
+                <SocialIcon
+                  _id="facebook-link"
+                  title="Facebook"
+                  link="https://www.facebook.com/alejandro.maruri.790"
+                  icon="fa fa-facebook"
+                />
 
-                  <a
-                    id="instagram-link"
-                    title="Instgram"
-                    href="https://www.instagram.com/ea_maruri/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </div>
+                <SocialIcon
+                  _id="instagram-link"
+                  title="Instagram"
+                  link="https://www.instagram.com/ea_maruri/"
+                  icon="fa fa-instagram"
+                />
               </div>
             </div>
 
-            <div className="row mt-3">
-              <div className="col">
-                <div className="d-flex justify-content-between">
-                  <a
-                    id="github-link"
-                    title="Github"
-                    href="https://github.com/ea-maruri/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-github" aria-hidden="true"></i>
-                  </a>
+            <div className="row mt-2 p-2">
+              <div className="col d-flex justify-content-between">
+                <SocialIcon
+                  _id="github-link"
+                  title="Github"
+                  link="https://github.com/ea-maruri/"
+                  icon="fa fa-github"
+                />
 
-                  <a
-                    id="linkedin-link"
-                    title="LinkedIn"
-                    href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt"
-                    target="_blank"
-                  >
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
+                <SocialIcon
+                  _id="linkedin-link"
+                  title="Linkedin"
+                  link="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt"
+                  icon="fa fa-linkedin"
+                />
               </div>
             </div>
           </div>
 
-          <footer className="mt-2">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="d-block mx-auto"
-                    title="Get in touch"
-                    src={Heart}
-                    alt="Heart"
-                    height="40px"
-                  ></img>
-                </div>
+          <footer className="container-fluid mt-1">
+            <div className="row">
+              <div className="col">
+                <img
+                  className="d-block mx-auto"
+                  title="Get in touch"
+                  src={Heart}
+                  alt="Heart"
+                  height="40px"
+                ></img>
               </div>
             </div>
           </footer>
         </div>
 
-        <div id="marrow-container" className="position-absolute position-fixed arrow-container">
-          <div className="line"></div>
-
-          <p>
-            <i id="marrow" className="arrow down"></i>
-          </p>
-        </div>
+        <Arrow />
+        
       </aside>
     );
   }

@@ -1,0 +1,38 @@
+/* Arrow */
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+.arrow-container
+    cursor: pointer
+    right: 1.8rem
+    bottom: 4rem
+    
+    +mTransition(1s, ease-out)
+    +zoomUp(.3s, 1.3)
+
+    
+//* ARROWS *//
+.line
+    width: 0
+    height: 9vh
+    border-right: 4px dashed $brand-white
+    
+
+.arrow 
+    border: dashed $brand-white
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: .8rem // Arrow width
+
+
+.right 
+    +mRotate(-45deg)
+
+.left 
+    +mRotate(135deg)
+
+.up 
+    +mRotate(-135deg)
+
+.down 
+    +mRotate(45deg)

@@ -1,0 +1,55 @@
+/* Arrow */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.arrow-container {
+  cursor: pointer;
+  right: 1.8rem;
+  bottom: 4rem;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.arrow-container:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.line {
+  width: 0;
+  height: 9vh;
+  border-right: 4px dashed #f4f4f4;
+}
+
+.arrow {
+  border: dashed #f4f4f4;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .8rem;
+}
+
+.right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.left {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.up {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=arrow.css.map */

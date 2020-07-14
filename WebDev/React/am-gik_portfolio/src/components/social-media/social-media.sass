@@ -10,33 +10,35 @@
         
 
 .social-container
-    //top: 1rem
-    left: .9rem
+    left: 1rem
     display: none
 
     background-color: $brand-white
-    width: 6.7rem
-    height: 11rem
+    width: 8rem//6.7rem
+    height: 12.5rem//11rem
 
     +mBorderR(10px)
     +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
 
 
+    header h3
+        font-family: $font-fourth
+        font-size: 1.5rem
+        color: $brand-red
+
+   
+    img 
+        transition: transform .5s
+        cursor: pointer
+
+   
     &:hover
         display: block
 
-
-    &:hover 
         img
-            transition: transform .5s
             transform: scale(1.3)
-
-    h1, h2, h3, h4, h5, h5 
-        color: $brand-blue
-
-    img 
-       cursor: pointer 
    
+
 a > i
     color: $brand-red 
     +zoomUp(.4s, 1.6)
@@ -47,47 +49,3 @@ aside
     bottom: $from-bottom-height
  
 
-    #marrow-container
-        display: flex
-        flex-direction: column
-
-        justify-content: center
-        align-items: center
-
-        +mTransition(1s, ease-out)
-
-
-    .arrow-container
-        right: 1.2rem
-        bottom: 3.7rem
-        
-        cursor: pointer
-
-        +zoomUp(.3s, 1.3)
-
-
-//* ARROWS *//
-.line
-    width: 0
-    height: 9vh
-    border-right: 3px dashed $brand-white
-    
-
-.arrow 
-    border: dashed $brand-white
-    border-width: 0 3px 3px 0
-    display: inline-block
-    padding: .8rem // Arrow width
-
-
-.right 
-    +mRotate(-45deg)
-
-.left 
-    +mRotate(135deg)
-
-.up 
-    +mRotate(-135deg)
-
-.down 
-    +mRotate(45deg)
