@@ -6,8 +6,12 @@ import ChipButton from "./../chip-button/chip-button";
 
 class Footer extends React.Component {
   render() {
+    // Year for copyright
+    let mtoday = new Date();
+    let year = mtoday.getFullYear();
+
     return (
-      <footer className="container bottom-space">
+      <footer id="footer-bottom" className="container bottom-space">
         <div className="d-flex justify-content-around">
           <ChipButton
             id="search-chip"
@@ -21,7 +25,7 @@ class Footer extends React.Component {
             <a href="./home">
               <ChipButton
                 id="search-chip"
-                value="&#169; Copyright 2020 AM-GIK"
+                value={"c " + year + " AM-GIK"}
                 class="button-chip-lg"
                 dataToggle=""
                 dataTarget=""

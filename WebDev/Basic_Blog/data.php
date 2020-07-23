@@ -12,18 +12,14 @@ $posts = [
     "title" => "Demo title 1",
     "intro" => "This is simple content and its cool",
     "image" => "https://picsum.photos/150/150/",
-    // Task 1 add author
-    "author" => "",
-    // Task 2 add date
-    "date" => ""
+    "author" => "EA - Test",
+    "date" => "2020/06/20"
   ],
   [
     "title" => "Demo title 2",
     "intro" => "This is simple content as second article and its cool",
     "image" => "https://picsum.photos/150/150/",
-    // Task 1 add author
-    "author" => "",
-    // Task 2 add date
-    "date" => ""
+    "author" => "Other User",
+    "date" => "2020/05/12"
   ]
 ];

@@ -5,8 +5,14 @@ import "./App.css";
 // Component
 import Nav from "./../components/Navigation/Navigation";
 
-function App() {
-  return <Nav />;
+class App extends React.Component{
+  render(){
+    return (
+      <div>
+        <Nav />
+      </div>
+    );
+  }
 }
 
 export default App;

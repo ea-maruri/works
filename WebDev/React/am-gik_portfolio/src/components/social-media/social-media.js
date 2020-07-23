@@ -13,6 +13,7 @@ class SocialMedia extends React.Component {
   render() {
     return (
       <aside className="position-absolute">
+
         <div className="position-absolute position-fixed social-chip ">
           <ChipButton
             id="social-chip"
@@ -85,7 +86,7 @@ class SocialMedia extends React.Component {
           </footer>
         </div>
 
-        <Arrow />
+        <Arrow containerArrowPosition={this.props.containerArrowPosition} arrowDirection={this.props.arrowDirection}/>
         
       </aside>
     );

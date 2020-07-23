@@ -10,16 +10,68 @@ import Footer from "./../components/footer/footer";
 import Me from "./public/imgs/home/Me.jpg";
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      containerArrowPosition: "",
+      arrowDirection: ""
+    };
+
+    // Call Function
+    //this.checkScrollDirection();
+    setInterval(this.checkScrollDirection, 500);
+  }
+
+  // Check Scrolling
+  checkScrollDirection = () => {
+    // Sizes
+    let body = document.body;
+    let html = document.documentElement;
+    let refPoint = 2.5;
+
+    const height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+
+    // Each half second
+
+    let scrollTop =
+      window.pageYOffset ||
+      (document.documentElement || document.body.parentNode || document.body)
+        .scrollTop;
+
+    if (scrollTop >= height / refPoint) {
+      console.log("Suppose Up");
+      this.setState({
+        containerArrowPosition: "flex-column-reverse",
+        arrowDirection: "arrow up",
+      });
+    } else {
+      console.log("Suppose Down");
+      this.setState({
+        containerArrowPosition: "flex-column",
+        arrowDirection: "arrow down",
+      });
+    } 
+  };
+
   render() {
     return (
       <div>
-        <CommonElements />
+        <CommonElements containerArrowPosition={this.state.containerArrowPosition} arrowDirection={this.state.arrowDirection}/>
+
+        <div id="document-top"></div>
 
         <section className="top-space">
           <main>
             <div className="container mt-5">
               <div className="jumbotron">
-                <div className="mt-5 pool-box ">
+                <div className="mt-5 pool-box">
                   <h1 className="msuper-title">
                     We all HAVE<br></br>MAGIC<br></br>WITHIN US
                   </h1>

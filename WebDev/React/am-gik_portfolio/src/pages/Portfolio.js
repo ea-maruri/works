@@ -130,6 +130,9 @@ class Portfolio extends React.Component {
       <div>
         <CommonElements />
 
+        <div id="document-top">
+        </div>
+
         <header className="container top-space">
           <div className="row">
             <div className="col-sm-12">
