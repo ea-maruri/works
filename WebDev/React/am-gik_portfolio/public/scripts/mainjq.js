@@ -52,4 +52,3 @@ function checkScrollDirectionForNav() {
     false
   );
 }
-
