@@ -14,6 +14,56 @@ import Spades from "./public/imgs/about/symbols-spades-light.svg";
 import Heart from "./public/imgs/about/symbol-hearts.svg";
 
 class About extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      containerArrowPosition: "",
+      arrowDirection: "",
+    };
+
+    // Call Function
+    //this.checkScrollDirection();
+    setInterval(this.checkScrollDirection, 500);
+  }
+
+  // Check Scrolling
+  checkScrollDirection = () => {
+    // Sizes
+    let body = document.body;
+    let html = document.documentElement;
+    let refPoint = 2.5;
+
+    const height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+
+    // Each half second
+
+    let scrollTop =
+      window.pageYOffset ||
+      (document.documentElement || document.body.parentNode || document.body)
+        .scrollTop;
+
+    if (scrollTop >= height / refPoint) {
+      console.log("Suppose Up");
+      this.setState({
+        containerArrowPosition: "flex-column-reverse",
+        arrowDirection: "arrow up",
+      });
+    } else {
+      console.log("Suppose Down");
+      this.setState({
+        containerArrowPosition: "flex-column",
+        arrowDirection: "arrow down",
+      });
+    }
+  };
+
   render() {
     // About
     const firstCardValue = (
@@ -140,14 +190,20 @@ class About extends React.Component {
     );
 
     return (
-      <div className="top-space">
-        <CommonElements />
+      <div>
+        <CommonElements
+          containerArrowPosition={this.state.containerArrowPosition}
+          arrowDirection={this.state.arrowDirection}
+        />
 
-        <div id="document-top">
-        </div>
+        <div id="document-top"></div>
 
-        <header>
-          <h1 className="text-center mb-5 mtitle">Know me</h1>
+        <header className="container top-space mb-5">
+          <div className="row">
+            <div className="col-sm-12">
+              <h1 className="mtitle text-center top-space">Know Me</h1>
+            </div>
+          </div>
         </header>
 
         <main className="container">

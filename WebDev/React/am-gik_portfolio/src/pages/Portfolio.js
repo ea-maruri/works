@@ -19,6 +19,56 @@ import imgARPProtocol from "./public/imgs/portfolio/networking/arp-protocol.png"
 import imgPortrait from "./public/imgs/portfolio/design/portrait.png";
 
 class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      containerArrowPosition: "",
+      arrowDirection: "",
+    };
+
+    // Call Function
+    //this.checkScrollDirection();
+    setInterval(this.checkScrollDirection, 500);
+  }
+
+  // Check Scrolling
+  checkScrollDirection = () => {
+    // Sizes
+    let body = document.body;
+    let html = document.documentElement;
+    let refPoint = 2.5;
+
+    const height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+
+    // Each half second
+
+    let scrollTop =
+      window.pageYOffset ||
+      (document.documentElement || document.body.parentNode || document.body)
+        .scrollTop;
+
+    if (scrollTop >= height / refPoint) {
+      console.log("Suppose Up");
+      this.setState({
+        containerArrowPosition: "flex-column-reverse",
+        arrowDirection: "arrow up",
+      });
+    } else {
+      console.log("Suppose Down");
+      this.setState({
+        containerArrowPosition: "flex-column",
+        arrowDirection: "arrow down",
+      });
+    }
+  };
+
   render() {
     // Web Dev
     const portfolioContent = (
@@ -128,10 +178,12 @@ class Portfolio extends React.Component {
 
     return (
       <div>
-        <CommonElements />
+        <CommonElements
+          containerArrowPosition={this.state.containerArrowPosition}
+          arrowDirection={this.state.arrowDirection}
+        />
 
-        <div id="document-top">
-        </div>
+        <div id="document-top"></div>
 
         <header className="container top-space">
           <div className="row">
@@ -188,7 +240,7 @@ class Portfolio extends React.Component {
                 buttonRef="https://github.com/ea-maruri/works/tree/master/WebDev/Basic_WebSite"
               />
             </div>
-            
+
             <div id="prog-section" className="col-sm-12 col-md-6">
               <header className="text-center my-5">
                 <h2>Programming</h2>
@@ -322,7 +374,7 @@ class Portfolio extends React.Component {
                 buttonRef="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World"
               />
             </div>
-            
+
             <div id="net-section" className="col-sm-12 col-md-6">
               <header className="text-center my-5">
                 <h2>Networking</h2>

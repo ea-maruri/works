@@ -15,7 +15,7 @@ class Home extends React.Component {
 
     this.state = {
       containerArrowPosition: "",
-      arrowDirection: ""
+      arrowDirection: "",
     };
 
     // Call Function
@@ -57,29 +57,29 @@ class Home extends React.Component {
         containerArrowPosition: "flex-column",
         arrowDirection: "arrow down",
       });
-    } 
+    }
   };
 
   render() {
     return (
       <div>
-        <CommonElements containerArrowPosition={this.state.containerArrowPosition} arrowDirection={this.state.arrowDirection}/>
+        <CommonElements
+          containerArrowPosition={this.state.containerArrowPosition}
+          arrowDirection={this.state.arrowDirection}
+        />
 
         <div id="document-top"></div>
 
-        <section className="top-space">
-          <main>
-            <div className="container mt-5">
-              <div className="jumbotron">
-                <div className="mt-5 pool-box">
-                  <h1 className="msuper-title">
-                    We all HAVE<br></br>MAGIC<br></br>WITHIN US
-                  </h1>
-                </div>
-              </div>
+        <header className="container top-space">
+          <div className="jumbotron">
+            <div className="col-sm-12 pool-box">
+              <h1 className="text-center top-space msuper-title mb-5">
+                We all HAVE<br></br>MAGIC<br></br>WITHIN US
+              </h1>
             </div>
-          </main>
-        </section>
+          </div>
+        </header>
+
 
         <PseudoNav />
 

@@ -6,7 +6,7 @@ import CardShape from "./../card-shape/card-shape";
 class PseudoNav extends React.Component {
   render() {
     return (
-      <nav className="mb-5">
+      <nav className="my-5">
 
         <div className="container">
           <div className="row">
