@@ -98,11 +98,11 @@ class PortfolioCard extends React.Component {
           </div>
         </div>
 
-        <div id="myModal" class="modal">
-          <span class="close" onClick={this.hideModal}>
+        <div id="myModal" className="modal">
+          <span className="close" onClick={this.hideModal}>
             &times;
           </span>
-          <img class="modal-content" id="imgModal" alt=""></img>
+          <img className="modal-content" id="imgModal" alt=""></img>
           <div id="caption"></div>
         </div>
       </div>

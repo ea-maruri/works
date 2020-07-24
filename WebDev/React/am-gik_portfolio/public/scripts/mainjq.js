@@ -22,6 +22,14 @@ const width = Math.max(
 
 
 function checkScrollDirectionForNav() {
+  const width = Math.max(
+    body.scrollWidth,
+    body.offsetWidth,
+    html.clientWidth,
+    html.scrollWidth,
+    html.offsetWidth
+  );
+  
   // Check Scroll Direction
   var lastScrollTop = 0;
   var nav_cards = document.getElementById("mprincipal-nav");

@@ -13,19 +13,19 @@ html {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) and (max-width: 900px) {
   html {
     font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1000px) and (max-width: 770px) {
   html {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1000px) and (max-width: 320px) {
   html {
     font-size: 11px;
   }
@@ -50,25 +50,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h1 {
     font-size: 2.1rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h1 {
     font-size: 1.7rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h1 {
     font-size: 1.45rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h1 {
     font-size: 1.2rem;
   }
@@ -80,25 +80,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h2 {
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h2 {
     font-size: 1.65rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h2 {
     font-size: 1.375rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h2 {
     font-size: 1.18rem;
   }
@@ -110,25 +110,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h3 {
     font-size: 1.7rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h3 {
     font-size: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h3 {
     font-size: 1.325rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h3 {
     font-size: 1.16rem;
   }
@@ -140,25 +140,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h4 {
     font-size: 1.6rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h4 {
     font-size: 1.375rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h4 {
     font-size: 1.275rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h4 {
     font-size: 1.14rem;
   }
@@ -170,25 +170,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h5 {
     font-size: 1.45rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h5 {
     font-size: 1.325rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h5 {
     font-size: 1.215rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h5 {
     font-size: 1.11rem;
   }
@@ -200,25 +200,25 @@ code {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) and (max-width: 1000px) {
   h6 {
     font-size: 1.4rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1060px) and (max-width: 900px) {
   h6 {
     font-size: 1.3rem;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1060px) and (max-width: 770px) {
   h6 {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1060px) and (max-width: 320px) {
   h6 {
     font-size: 1.1rem;
   }
@@ -233,15 +233,13 @@ p {
   p {
     margin-top: 2rem;
   }
-}
-
-p a {
-  color: #009BDB;
-}
-
-p a:hover {
-  color: #000000;
-  text-decoration: none;
+  p a {
+    color: #009BDB;
+  }
+  p a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
 /* Images */
@@ -271,7 +269,7 @@ img.mimg:hover {
 }
 
 .top-space {
-  margin-top: 8rem;
+  margin-top: 7.5rem;
 }
 
 @media only screen and (max-width: 770px) {

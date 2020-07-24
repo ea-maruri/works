@@ -46,13 +46,11 @@ class Home extends React.Component {
         .scrollTop;
 
     if (scrollTop >= height / refPoint) {
-      console.log("Suppose Up");
       this.setState({
         containerArrowPosition: "flex-column-reverse",
         arrowDirection: "arrow up",
       });
     } else {
-      console.log("Suppose Down");
       this.setState({
         containerArrowPosition: "flex-column",
         arrowDirection: "arrow down",
