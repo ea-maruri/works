@@ -4,48 +4,52 @@
 
 
 .social-chip 
-    &:hover + .social-container
-        display: block
+  &:hover + .social-container
+    display: block
 
-        
 
 .social-container
-    left: 1rem
-    display: none
+  left: 1rem
+  display: none
 
-    background-color: $brand-white
-    width: 8rem//6.7rem
-    height: 12.5rem//11rem
+  background-color: $brand-white
+  width: 8rem//6.7rem
+  height: 12.5rem//11rem
 
-    +mBorderR(10px)
-    +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
+  +mBorderR(10px)
+  +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
 
+  @media #{"only screen and (max-width : 770px)"}
+    top: 2vh
+    left: 70%
 
-    header h3
-        font-family: $font-fourth
-        font-size: 1.5rem
-        color: $brand-red
+  header h3
+    font-family: $font-fourth
+    font-size: 1.5rem
+    color: $brand-red
 
-   
     img 
-        transition: transform .5s
-        cursor: pointer
+      transition: transform .5s
+      cursor: pointer
 
-   
-    &:hover
-        display: block
 
-        img
-            transform: scale(1.3)
-   
+  &:hover
+    //left: 1rem
+    display: block
+
+    img
+      transform: scale(1.25)
+
 
 a > i
-    color: $brand-red 
-    +zoomUp(.4s, 1.6)
+  color: $brand-red
+  +zoomUp(.4s, 1.6)
 
 
 aside
-    z-index: 9999
-    bottom: $from-bottom-height
- 
+  z-index: 9999
+  bottom: $from-bottom-height
 
+  @media #{"only screen and (max-width : 770px)"}
+    top: -2vw
+    right: 16vw
