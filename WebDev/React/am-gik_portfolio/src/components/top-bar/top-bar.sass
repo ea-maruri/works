@@ -1,0 +1,16 @@
+//***************** FLEX SEARCH BAR *********************//
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+
+img.mlogo
+    height: $search-bar-logo-height
+    width: auto
+
+    +zoomUp(.6s, 1.2)
+    +mBorderR(9px)
+    +mShadow(0px 0px 7px 2px $brand-black)
+    
+
+    @media #{"only screen and (max-width : 770px)"}
+        height: $search-bar-logo-height-sm

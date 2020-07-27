@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,WAAW;AAWX,aAAa;AAKb,iBAAiB;AAMjB,WAAW",
+    "sources": [
+        "variables.sass"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

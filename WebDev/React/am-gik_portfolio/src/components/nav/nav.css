@@ -1,0 +1,21 @@
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+#nav-cards {
+  position: fixed;
+  bottom: -170px;
+  width: 100%;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
+}
+
+@media only screen and (max-width: 770px) {
+  #nav-cards {
+    bottom: -120px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

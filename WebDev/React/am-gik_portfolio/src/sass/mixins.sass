@@ -1,0 +1,90 @@
+=mChipButton($width, $width-sm)
+    width:              $width
+    height:             $width
+
+    border:             3px dashed $brand-white
+    background-color:   $brand-red
+    
+    cursor:             pointer
+    
+    color:              $brand-white
+    font-size:          0.7rem
+    font-family:        $font-primary
+             
+    +mBorderR(50%)
+    +mShadow( 0px 0px 8px 6px rgba(0,0,0,.8)) // Box Shadow
+    +zoomUp(.5s, 1.1)
+    
+
+    @media #{"only screen and (max-width : 770px)"}
+        right: 1rem
+
+
+    @media #{"only screen and (max-width : 650px)"} 
+        width:      $width-sm
+        height:     $width-sm
+
+    
+=mShadow($shadow)
+    -ms-box-shadow:         $shadow
+    -webkit-box-shadow:     $shadow
+    -moz-box-shadow:        $shadow
+    -o-box-shadow:          $shadow
+    box-shadow:             $shadow
+
+
+=mTextShadow($shadow)
+    -ms-text-shadow:         $shadow
+    -webkit-text-shadow:     $shadow
+    -moz-text-shadow:        $shadow
+    -o-text-shadow:          $shadow
+    text-shadow:             $shadow
+
+    
+=mBorderR($b-radius)
+    -ms-border-radius:      $b-radius
+    -webkit-border-radius:  $b-radius
+    -moz-border-radius:     $b-radius
+    -o-border-radius:       $b-radius
+    border-radius:          $b-radius
+
+
+=mRotate($rotation)
+    -ms-transform:          rotate($rotation)
+    -webkit-transform:      rotate($rotation)
+    -moz-transform:         rotate($rotation)
+    -o-transform:           rotate($rotation)
+    transform:              rotate($rotation)
+
+    
+=zoomUp($time, $scale)
+    transition:             transform $time
+
+    &:hover
+        transform:          scale($scale)    
+
+
+=makeCard()
+    border-top:         .2rem solid $brand-pure-black
+    border-left:        .2rem solid $brand-pure-black
+    border-right:       .2rem solid $brand-pure-black
+
+    +mLinear-Gradient(to bottom right, $brand-white, $brand-gray)
+    
+    +zoomUp(.4s, .98)
+
+
+=mTransition($time, $mode) 
+    -ms-transition:         $time $mode
+    -webkit-transition:     $time $mode
+    -moz-transition:        $time $mode
+    -o-transition:          $time $mode
+    transition:             $time $mode
+
+
+=mLinear-Gradient($dir, $color1, $color2)
+    background-image:       -ms-linear-gradient($dir, $color1, $color2)
+    background-image:       -webkit-linear-gradient($dir, $color1, $color2)
+    background-image:       -moz-linear-gradient($dir, $color1, $color2)
+    background-image:       -o-linear-gradient($dir, $color1, $color2)
+    background-image:       linear-gradient($dir, $color1, $color2)

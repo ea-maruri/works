@@ -1,0 +1,71 @@
+/* Card Shape */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.card-shape {
+  border: 3px dashed #f4f4f4;
+  width: 8.07rem;
+  height: 11.45rem;
+  margin: 0 auto;
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  border-radius: 8px;
+}
+
+.card-shape:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card-shape a {
+  text-decoration: none;
+  color: #E81A2E;
+}
+
+.card-shape a h4 {
+  display: none;
+  font-size: .9rem;
+  text-align: center;
+  color: #262626;
+}
+
+.card-shape a div {
+  text-align: center;
+}
+
+.card-shape a div i {
+  text-decoration: none;
+}
+
+.card-shape:hover {
+  background-color: #f4f4f4;
+  border: 3px dashed #262626;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D4D4D4), to(#f4f4f4));
+  background-image: linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+}
+
+.card-shape:hover:hover a h4 {
+  display: block;
+}
+
+.card-shape:hover:hover i {
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
+}
+
+@media only screen and (max-width: 650px) {
+  .card-shape {
+    width: 62px;
+    height: 88px;
+  }
+}
+/*# sourceMappingURL=card-shape.css.map */

@@ -1,0 +1,83 @@
+/*** Button - Circle ***/
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.button-chip-sm {
+  width: 10vh;
+  height: 10vh;
+  border: 3px dashed #f4f4f4;
+  background-color: #E81A2E;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-size: 0.7rem;
+  font-family: "Black Ops One", cursive;
+  border-radius: 50%;
+  -ms-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  font-size: 1rem;
+}
+
+.button-chip-sm:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (max-width: 770px) {
+  .button-chip-sm {
+    right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .button-chip-sm {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+.button-chip-lg {
+  width: 13vw;
+  height: 13vw;
+  border: 3px dashed #f4f4f4;
+  background-color: #E81A2E;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-size: 0.7rem;
+  font-family: "Black Ops One", cursive;
+  border-radius: 50%;
+  -ms-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.8);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  font-size: 1.4rem;
+}
+
+.button-chip-lg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (max-width: 770px) {
+  .button-chip-lg {
+    right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .button-chip-lg {
+    width: 13vh;
+    height: 13vh;
+  }
+}
+/*# sourceMappingURL=chip-button.css.map */

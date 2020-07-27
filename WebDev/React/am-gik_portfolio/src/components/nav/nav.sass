@@ -1,0 +1,19 @@
+//***************** NAVIGATION BAR *********************//
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+
+#nav-cards
+    position: fixed
+    bottom: -170px//-245px//-28vh
+    width: 100%
+    z-index: 9999
+
+    margin: 0
+    padding: 0
+
+    +mTransition(.7s, ease-out)
+
+    @media #{"only screen and (max-width : 770px)"}
+        bottom: -120px
+            

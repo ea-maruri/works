@@ -1,0 +1,29 @@
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+img.mlogo {
+  height: 12vh;
+  width: auto;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  border-radius: 9px;
+  -ms-box-shadow: 0px 0px 7px 2px #262626;
+  -webkit-box-shadow: 0px 0px 7px 2px #262626;
+  -o-box-shadow: 0px 0px 7px 2px #262626;
+  box-shadow: 0px 0px 7px 2px #262626;
+}
+
+img.mlogo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 770px) {
+  img.mlogo {
+    height: 9vh;
+  }
+}
+/*# sourceMappingURL=top-bar.css.map */

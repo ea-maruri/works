@@ -1,0 +1,57 @@
+/* Contact Form */
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.maboutform {
+  -ms-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 770px) {
+  .maboutform {
+    margin-top: 5rem;
+  }
+  .maboutform main {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#mContactForm small {
+  margin-top: .5rem;
+  color: #262626;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.about-form small {
+  margin-top: .5rem;
+  color: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+input, textarea {
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D4D4D4), to(#f4f4f4));
+  background-image: linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  border-radius: 10px;
+}
+
+input:hover, textarea:hover {
+  border: 2px solid #262626;
+}
+/*# sourceMappingURL=contact-form.css.map */

@@ -1,0 +1,51 @@
+/* Contact Form */
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+
+.maboutform
+    +mShadow(2px 2px 6px 3px rgba(0,0,0,.4))
+    padding: 2rem
+
+    z-index: 9999
+
+            //margin-top: 8rem
+
+    @media #{"only screen and (max-width : 770px)"}
+        margin-top: 5rem
+
+
+        main
+            grid-column: 1/5
+
+            display: grid
+            grid-template-columns: 1fr
+
+
+#mContactForm
+    small
+        margin-top: .5rem
+        color: $brand-black
+        font-family: $font-fourth
+        font-weight: 900
+        margin: 0 auto
+
+
+.about-form
+    small
+        margin-top: .5rem
+        color: $brand-white
+        font-family: $font-fourth
+        font-weight: 900
+        margin: 0 auto
+
+
+input, textarea
+    +mTransition(.7s, ease-out)
+    +mLinear-Gradient(to bottom right, $brand-gray, $brand-white)
+    +mBorderR(10px)
+
+    &:hover
+        border: 2px solid $brand-black
+
+

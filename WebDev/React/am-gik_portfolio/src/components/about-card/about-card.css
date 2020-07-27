@@ -1,0 +1,134 @@
+/**/
+/* BRAND */
+/*Gradients*/
+/* Breakpoints */
+/* Sizes */
+.mcard {
+  background-color: #f4f4f4;
+  margin: 0  auto 2.5rem;
+  overflow: hidden;
+  -ms-box-shadow: 0px 0px 6px 3px #262626;
+  -webkit-box-shadow: 0px 0px 6px 3px #262626;
+  -o-box-shadow: 0px 0px 6px 3px #262626;
+  box-shadow: 0px 0px 6px 3px #262626;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  width: 250px;
+  height: 265px;
+}
+
+.mcard:hover {
+  height: 387px;
+  z-index: 9999;
+}
+
+.mcard .mcard-header {
+  position: absolute;
+  width: 100%;
+  background-color: #D4D4D4;
+  -ms-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  color: #E81A2E;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.mcard .mcard-symbol {
+  position: absolute;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.mcard .mcard-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  color: #f4f4f4;
+  z-index: 9998;
+}
+
+.mcard .mcard-content p {
+  padding: .4rem;
+}
+
+.mcard .mcard-content p a {
+  color: #009BDB;
+  text-decoration: none;
+}
+
+.mcard .mcard-content p a:hover {
+  color: #f4f4f4;
+}
+
+.mcard .mcard-content > i {
+  width: 235px;
+  margin-top: .8rem;
+}
+
+.mcard .mcard-content > i i.fa {
+  color: #E81A2E;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+}
+
+.mcard .mcard-content i.fa {
+  margin-left: 2rem;
+}
+
+.mcard .mcard-btn-container {
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 9998;
+  width: 100%;
+}
+
+.mcard .mcard-circle {
+  background-color: #262626;
+  border-radius: 50%;
+  height: 600px;
+  width: 650px;
+  margin-left: -82%;
+  margin-top: -480px;
+}
+
+.mcard:hover .mcard-header {
+  margin-top: 269px;
+}
+
+.mcard:hover .mcard-symbol {
+  display: none;
+}
+
+.mcard:hover .mcard-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mcard:hover .mcard-btn-container {
+  display: block;
+  margin-top: 285px;
+}
+
+.mcard:hover .mcard-circle {
+  margin-top: -360px;
+}
+/*# sourceMappingURL=about-card.css.map */

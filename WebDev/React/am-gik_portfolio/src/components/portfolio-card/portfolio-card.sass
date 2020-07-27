@@ -1,0 +1,220 @@
+/* Portfolio cards */
+@import "./../../sass/variables"
+@import "./../../sass/mixins"
+
+.mportfoliocard
+    background-color: $brand-white
+    margin: auto
+
+    .card-body
+        button
+            display: block
+            margin: auto
+    
+            a
+                padding: .7rem .7rem
+
+    ul > li 
+        text-align: center
+
+    img
+        +zoomUp(.4s, 1.05)
+        +mBorderR(8px)
+
+        max-height: 200px
+
+    p
+        font-family: $font-fourth
+        font-weight: 600
+        color: $brand-black
+
+
+.card
+    +mShadow(0px 0px 7px 5px $brand-black)
+    //width: 85%
+
+    h5.card-header
+        height: 4rem
+        background-color: $brand-black
+        color: $brand-red
+        text-align: center
+        
+        a
+            font-size: 1.4rem
+            font-family: $font-fourth
+            color: $brand-red
+            font-weight: 600
+            text-transform: uppercase
+
+.card-title
+    color: $brand-red
+
+.btn-border-primary
+    border:             1px solid $brand-red
+    background-clip:    border-box
+    background:         none
+    color:              $brand-red  
+    +mBorderR(10px)
+    
+    //width: 50%
+    height: 2rem
+
+    font-family:        $font-primary
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
+    
+    &:hover
+        background-color:       $brand-red
+        color:                  $brand-white
+
+        +mLinear-Gradient(to bottom right, $brand-red, $brand-gray)
+
+    &:hover a
+        color: $brand-white
+
+
+.btn-border-secondary
+    border:             2px solid $brand-blue
+    background-clip:    border-box
+    background:         none
+    color: $brand-blue  
+    +mBorderR(40px)
+    
+    width: 75%
+    height: 2.5rem
+
+    font-family:        $font-third
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+
+    +mTransition(.5s, ease-out)
+
+    &:hover
+        background-color:   $brand-blue
+        color:              $brand-white 
+        
+
+.btn-border-black
+    border:             2px solid $brand-black
+    background-clip:    border-box
+    +mLinear-Gradient(to bottom right, $brand-white, $brand-gray)
+    color:              $brand-black  
+    +mBorderR(10px)
+    
+    //width: 50%
+    height: 2rem
+
+    font-family:        $font-primary
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+    padding:            .2rem 2rem
+    
+    display: block
+    margin: 0 auto
+
+
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
+    
+    &:hover
+        background-color:       $brand-black
+        color:                  $brand-white
+
+        +mLinear-Gradient(to bottom right, $brand-black, $brand-gray)
+
+    &:hover a
+        color: $brand-white
+
+
+
+// Food Modal
+//* Style the Image Used to Trigger the Modal */
+.myModalImg 
+    cursor: pointer
+    transition: 0.3s
+
+    &:hover
+        opacity: 0.9   
+
+
+
+/* The Modal (background) */
+.modal 
+    display: none //* Hidden by default */
+    position: fixed //* Stay in place */
+    z-index: 9999 //* Sit on top */
+    padding-top: 100px //* Location of the box */
+    left: 0
+    top: 0
+    width: 100% //* Full width */
+    height: 100% //* Full height */
+    overflow: auto //* Enable scroll if needed */
+    background-color: rgb(0,0,0) //* Fallback color */
+    background-color: rgba(0,0,0,0.9) //* Black w/ opacity */
+
+
+/* Modal Content (Image) */
+.modal-content 
+    margin: auto
+    display: block
+    width: 80%
+    max-width: 700px
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption 
+    margin: auto
+    display: block
+    width: 80%
+    max-width: 700px
+    text-align: center
+    color: #ccc
+    padding: 10px 0
+    height: 150px
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption 
+    -webkit-animation-name: zoom
+    -webkit-animation-duration: 0.6s
+    animation-name: zoom
+    animation-duration: 0.6s
+
+
+/* The Close Button */
+.close 
+    position: absolute
+    top: 15px
+    right: 35px
+    color: #f1f1f1
+    font-size: 40px
+    font-weight: bold
+    transition: 0.3s
+
+
+.close:hover, .close:focus 
+    color: #bbb
+    text-decoration: none
+    cursor: pointer
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+    .modal-content 
+        width: 100%
