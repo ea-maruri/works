@@ -1,13 +1,17 @@
 # works
 
-My principal works, practice, and more by 6 categories (Programming, Databases, Web Development, Networking, Artificial Intelligence, and Operating Systems)
+My principal works, practices, and more...
 
-Also, a design section.
+There are 6 categories: 
+    --> Programming
+    --> Databases
+    --> Web Development
+    --> Networking
+    --> Artificial Intelligence
+    --> Operating Systems
 
 
-
-The majority of the projects are made in Java, C++, and Python
-
+The majority of the projects are made in Java, C++, and Python.
 
 
-By Alejandro Maruri
+By Alejandro Maruri, 2020
