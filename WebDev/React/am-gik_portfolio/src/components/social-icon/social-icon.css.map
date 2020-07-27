@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAAA,iBAAiB;ACUjB,WAAW;AAWX,aAAa;AAKb,iBAAiB;AAMjB,WAAW;AD5BX,AAAA,YAAY,CAAC;EACT,SAAS,EAAE,MAAM;CAAG",
+    "sources": [
+        "social-icon.sass",
+        "../../sass/variables.sass",
+        "../../sass/mixins.sass"
+    ],
+    "names": [],
+    "file": "social-icon.css"
+}

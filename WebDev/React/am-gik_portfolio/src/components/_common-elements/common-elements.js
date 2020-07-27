@@ -13,7 +13,7 @@ class CommonElement extends React.Component {
       <div>
         <TopBar />
 
-        <SocialMedia />
+        <SocialMedia containerArrowPosition={this.props.containerArrowPosition} arrowDirection={this.props.arrowDirection}/>
 
         <Nav />
       </div>

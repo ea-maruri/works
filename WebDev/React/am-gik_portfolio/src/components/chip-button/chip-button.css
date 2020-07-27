@@ -21,6 +21,7 @@
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  font-size: 1rem;
 }
 
 .button-chip-sm:hover {
@@ -59,7 +60,7 @@
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .button-chip-lg:hover {

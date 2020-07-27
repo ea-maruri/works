@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,kBAAkB;ACUlB,WAAW;AAWX,aAAa;AAKb,iBAAiB;AAMjB,WAAW",
     "sources": [
-        "pseudo-nav.sass"
+        "pseudo-nav.sass",
+        "../../sass/variables.sass",
+        "../../sass/mixins.sass"
     ],
     "names": [],
     "file": "pseudo-nav.css"
