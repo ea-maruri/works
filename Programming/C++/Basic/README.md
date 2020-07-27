@@ -1,5 +1,10 @@
 # basic c++
 
-Basic projects and works in C++ language.
+<strong>Basic projects</strong> and works in <em>C++</em> language.
 
-By Alejandro Maruri
+<br><br>
+
+<footer>
+  By Alejandro Maruri, 2020
+</footer>
+
