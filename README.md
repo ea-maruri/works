@@ -1,19 +1,23 @@
 # works
 
-My principal works, practices, and more...
+<header>
+  <h4>My principal works, practices, and more...</h4>
+</header>
 
-There are 6 categories:
+<h5>There are 6 categories</h5>
 
 <ul>
   <li>--> Programming</li>
+  <li>--> Databases</li>
+  <li>--> Web Development</li>
+  <li>--> Networking</li>
+  <li>--> Artificial Intelligence</li>
+  <li>--> Operating Systems</li>
 </ul>
-  
-  --> Databases
-  --> Web Development
-  --> Networking
-  --> Artificial Intelligence
-  --> Operating Systems
 
-The majority of the projects are made in Java, C++, and Python.
+<p>The majority of the projects are made in <em>Java, C++, and Python</em>.</p>
 
-By Alejandro Maruri, 2020
+<footer>
+  <p>By <strong>Alejandro Maruri</strong>, 2020</p>
+</footer>
+
