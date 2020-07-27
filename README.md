@@ -22,6 +22,7 @@
 <p>The majority of the projects are made in <em>Java, C++, and Python</em>.</p>
 
 <br><br>
+
 <footer>
   <p>By <strong>Alejandro Maruri</strong>, 2020</p>
 </footer>
