@@ -1,6 +1,11 @@
-# web development
+# Web Development  Systems
 
-Categroy for many different works and practice in web development.
+<br>
 
+***
+This _category_ contains works and practices in **Web Development**.
 
-By Alejandro Maruri
+***
+
+<br><br>
+&copy; Alejandro Maruri, 2020

@@ -1,6 +1,15 @@
-# databases
+# Databases
 
-Categroy for many different works and practicing databases.
+<br>
+
+***
+  This _category_ contains works and practices in **Databases**.
+  
+  <br>
+
+  It is coming **soon**...
+***
 
 
-By Alejandro Maruri
+<br><br>
+&copy; Alejandro Maruri, 2020

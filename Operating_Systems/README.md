@@ -1,6 +1,15 @@
-# operating systems
+# Operating  Systems
 
-Categroy for many different works and practice of Operating Systems.
+<br>
 
+***
+This _category_ contains works and practices in **OS**.
 
-By Alejandro Maruri
+* **Banker Algorithm**:
+  *  Description...
+* **Simple Shell**: 
+  * Description...
+***
+
+<br><br>
+&copy; Alejandro Maruri, 2020

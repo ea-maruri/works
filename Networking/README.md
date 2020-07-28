@@ -1,6 +1,19 @@
-# networking
+# Networking
 
-Categroy for many different works and practice in networking.
+<br>
 
+***
+This _category_ contains works and practices in **Networking**.
 
-By Alejandro Maruri
+* **ARP Protocol**:
+  *  To search for NIC's (Network Interface Card) vendors, using _ARP  protocol_.
+* **Secure Chat**: 
+  * Description...
+* **Secure Chat 1**: 
+  * Description...
+* **Simple Chat**: 
+  * Description...
+***
+
+<br><br>
+&copy; Alejandro Maruri, 2020
