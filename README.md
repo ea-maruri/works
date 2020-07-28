@@ -1,29 +1,29 @@
-# works
-
-<header>
-  <h4>My principal works, practices, and more...</h4>
-</header>
+# My Works
 
 <br>
 
-<h5>There are 6 categories</h5>
-
-<ul>
-  <li>--> Programming</li>
-  <li>--> Databases</li>
-  <li>--> Web Development</li>
-  <li>--> Networking</li>
-  <li>--> Artificial Intelligence</li>
-  <li>--> Operating Systems</li>
-</ul>
+## My principal works, practices, and more...
 
 <br>
 
-<p>The majority of the projects are made in <em>Java, C++, and Python</em>.</p>
+***
+### There are 6 categories:
+
+* --> [Artificial Intelligence](https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence)
+* --> [Databases](https://github.com/ea-maruri/works/tree/master/Databases)
+* --> [Networking](https://github.com/ea-maruri/works/tree/master/Networking)
+* --> [Programming](https://github.com/ea-maruri/works/tree/master/Programming)
+* --> [Web Development](https://github.com/ea-maruri/works/tree/master/WebDev)
+
+***
+
+
+<br>
+
+**Note:** The majority of the projects are made in _Java, C++, and Python_.
 
 <br><br>
 
-<footer>
-  <p>By <strong>Alejandro Maruri</strong>, 2020</p>
-</footer>
-
+&copy; **Alejandro Maruri**, 2020
+<br>
+&copy; **AM-Gik**, 2020
