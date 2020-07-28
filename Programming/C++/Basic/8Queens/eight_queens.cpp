@@ -1,4 +1,4 @@
-// Alejandro Maruri
+// Alejandro Maruri, 2017
 
 #include <conio.h>
 #include <cstdlib>
@@ -8,7 +8,8 @@
 
 using namespace std;
 
-// Prototype functions
+/* Prototype functions */
+
 void printInstructions();
 
 void printEmptyTable(int[8][8], int[], int[], const int);
@@ -33,10 +34,8 @@ int Test(int[8][8]); // Count available spaces. Count "77" in table.
 //
 // Start program
 int main() {
-  const int size = 8; // Size
-
-  int outProgram = 0, startProgram = 1, input; // Conditionals
-
+  const int size = 8;                          // Size
+  int outProgram = 0, startProgram = 1, input; // Program Conditionals
   bool sentinel = true;
 
   // Arryas
@@ -45,40 +44,43 @@ int main() {
       Y[size] = {0, 1, 2, 3, 4, 5, 6, 7}; // For Coordinates
 
   // Auxiliars
-  int w, z, k, a, b, s, c, aa, bb, l, d = 0, attempt, r;
+  int w, z, k, a, b, s, c, aa, bb, l, d, attempt, r;
   int coordX, coordY;
 
   int maxAttempts;
   printInstructions(); // Return max number of attempts
 
   while (sentinel) {
-    attempt = 1;
-    k = 0;
-    d = 0;
-
-    cout << endl
-         << "If you want to start, type \"1\", otherwise, type \"0\" and press "
-            "enter: ";
+    cout
+        << endl
+        << "If you want to start, type \"1\", otherwise, type \"0\", and press "
+           "enter: ";
     cin >> input;
 
-    cout << "Indicate the maximum number of attempts > ";
-    cin >> maxAttempts;
-
+    // Check input
     if (input < 0 || input > 1) {
       cout << "Error: Bad entry." << endl;
       continue;
     } else if (input == outProgram) {
       cout << endl
            << endl
-           << setw(91) << "You have leave the program." << endl
+           << setw(70) << "You have leave the program." << endl
            << endl;
-      sentinel = false; // To go out
+      sentinel = false; // go out
     } else if (input == startProgram) {
+      cout << "\nIndicate the maximum number of attempts > ";
+      cin >> maxAttempts;
+
+      k = 0;
 
       while (k == 0) {
-        attempt++; // 3
+        attempt = 0;
+        d = 0;
 
-        cout << endl << endl << setw(87) << "Empty Table" << endl << endl;
+        attempt++;
+        // cout << "ATTEMPT: " << attempt << endl; // Global attmepts
+
+        cout << endl << endl << setw(83) << "Empty Table" << endl << endl;
 
         printEmptyTable(Table, Y, X, size);
 
@@ -91,11 +93,17 @@ int main() {
 
         while (d == 0) {
           if (k == 0) {
+            Table[coordX][coordY] = 1;
+
             aa = 1;
             bb = 2;
 
-            Table[coordX][coordY] = 1;
-
+            // Only for attempts less than maxAttempts
+            if (attempt != maxAttempts + 1) {
+              cout << setw(85) << endl
+                   << endl
+                   << "Attempt number " << (attempt) << endl;
+            }
             printTable(Table, coordX, coordY, Y, X, size, aa);
 
             // cout << endl << endl << "\"Enter\" to continue >";
@@ -128,39 +136,39 @@ int main() {
             l = Counter(Table);
             k = CountQueens(Table);
 
-            if (k == false) {
-              cout << endl
-                   << "No se encontro una solucion. Se colocaron " << l
-                   << " Reinas" << endl;
-              cout << setw(86) << endl
-                   << endl
-                   << "Attempt number " << (attempt) << endl;
-              d = 0;
-              attempt++;
-              EmptyTable(Table);
-            } else if (k == true) {
+            if (k) {
               attempt--;
               cout << endl
-                   << setw(100) << "*A solution was found in attempt number "
-                   << attempt << "*" << endl
+                   << setw(97) << "** A solution was found in attempt number "
+                   << attempt << " **" << endl
                    << endl;
               printFinal(Table, Y, X, size);
               d = 1;
               attempt = 2;
               // cout << endl << setw(87) << "Fin de la ejecucion" << endl <<
               // endl;
+            } 
+            else {
+              attempt++;
+
+              cout << endl
+                   << "A solution was NOT found." << endl
+                   << l << " Queens were allocated" << endl;
+
+              d = 0;
+              EmptyTable(Table);
             }
           }
 
-          if (attempt == maxAttempts) {
-            d = 1;
-            attempt = 1;
+          // Max attempts.The "+ 1" Allows the last chance
+          if (attempt == maxAttempts + 1) {
+            k = 1; // Go out outtter while
 
             cout << endl
-                 << "No se encontro una solucion. Se colocaron " << l
-                 << " Reinas" << endl
+                 << "Maximum of attempts reached (" << maxAttempts << ")."
                  << endl
-                 << setw(90) << "Intentelo de nuevo!!!" << endl;
+                 << endl
+                 << setw(86) << "Try it again!!!" << endl;
             break;
           }
         }
@@ -170,12 +178,10 @@ int main() {
     }
   }
 
-  cout << endl
-       << endl
-       << setw(86) << "End of the 8 Queens Problem." << endl
+  cout << setw(70) << "End of the 8 Queens Problem." << endl
        << endl;
 
-  cout << "Press any key to quit...";
+  cout << "\nPress any key to quit... ";
   getch();
 
   return 0;
@@ -192,10 +198,12 @@ void printInstructions() {
 
   // Instructions
   cout << "\tInstructions:" << endl
+       << "\t\t- You are asked if you want to start or leave the program."
        << "\t\t- After asking coordinates to allocate the first queen, "
           "program will start generating possible random solutions until a "
           "maximmum of 'n' opportunities."
        << endl
+       << "\t\t- Possible solutions are shown, step by step."
        << "\t\t- If program does not find solution, in the maximum number, "
           "you can restart (new coordinates are asked) or leave the program."
        << endl
@@ -251,7 +259,6 @@ int FirstCoord(int A[8][8], const int x, const int y, int aa) {
 
 int SecondCoord(int D[8][8], const int x, const int y, int bb) {
   int b;
-  // int d = bb;
 
   for (int i = 0; i < 8; i++) {
     for (int j = 0; j < 8; j++) {
@@ -296,16 +303,21 @@ void printTable(int B[8][8], const int w, const int z, int Y[], int X[],
     cout << setw(60) << Y[i] << "   ";
 
     for (int j = 0; j < 8; j++) {
-      if (B[i][j] != 0)
+      if (B[i][j] != 0) {
         B[i][j] = B[i][j];
-      if (j == w && j == z)
+      }
+      if (j == w && j == z) {
         B[i][j] = 0;
-      if (j == w)
+      }
+      if (j == w) {
         B[i][j] = 0;
-      if (i == z)
+      }
+      if (i == z) {
         B[i][j] = 0;
-      if (j == w && i == z)
+      }
+      if (j == w && i == z) {
         B[i][j] = zz;
+      }
       if (j == t && i == s) {
         B[i][j] = 0;
         s++;
@@ -316,34 +328,48 @@ void printTable(int B[8][8], const int w, const int z, int Y[], int X[],
         q++;
         r++;
       }
-      if (j == p && i == o)
+      if (j == p && i == o) {
         B[o][p] = 0;
-      if (j == n && i == m)
+      }
+      if (j == n && i == m) {
         B[m][n] = 0;
-      if (j == l && i == k)
+      }
+      if (j == l && i == k) {
         B[k][l] = 0;
-      if (j == h && i == g)
+      }
+      if (j == h && i == g) {
         B[g][h] = 0;
-      if (j == f && i == e)
+      }
+      if (j == f && i == e) {
         B[e][f] = 0;
-      if (j == d && i == c)
+      }
+      if (j == d && i == c) {
         B[c][d] = 0;
-      if (j == b && i == a)
+      }
+      if (j == b && i == a) {
         B[a][b] = 0;
-      if (j == pp && i == oo)
+      }
+      if (j == pp && i == oo) {
         B[oo][pp] = 0;
-      if (j == nn && i == mm)
+      }
+      if (j == nn && i == mm) {
         B[mm][nn] = 0;
-      if (j == ll && i == kk)
+      }
+      if (j == ll && i == kk) {
         B[kk][ll] = 0;
-      if (j == hh && i == gg)
+      }
+      if (j == hh && i == gg) {
         B[gg][hh] = 0;
-      if (j == ff && i == ee)
+      }
+      if (j == ff && i == ee) {
         B[ee][ff] = 0;
-      if (j == dd && i == cc)
+      }
+      if (j == dd && i == cc) {
         B[cc][dd] = 0;
-      if (j == bb && i == aa)
+      }
+      if (j == bb && i == aa) {
         B[aa][bb] = 0;
+      }
 
       cout << setw(4) << B[i][j];
     }
