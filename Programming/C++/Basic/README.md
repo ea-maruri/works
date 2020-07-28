@@ -1,10 +1,8 @@
-# basic c++
+# Basic C++
 
-<strong>Basic projects</strong> and works in <em>C++</em> language.
+
+**Basic projects** and works in **_C++_** language.
 
 <br><br>
 
-<footer>
-  By Alejandro Maruri, 2020
-</footer>
-
+&copy; Alejandro Maruri, 2020
