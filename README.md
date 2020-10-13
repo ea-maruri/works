@@ -1,8 +1,8 @@
 # Works Repository
 
-##My principal works, practices, and more...
+## My principal works, practices, and more...
 
-###There are 6 categories
+### There are 6 categories
 
 - --> Programming
 - --> Databases
